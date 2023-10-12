@@ -1,10 +1,10 @@
 import logging
 import json
-# from lida.utils import clean_code_snippet
-from ..scaffold import ChartScaffold
-# from llmx import TextGenerator, TextGenerationConfig, TextGenerationResponse
-# from lida.modules.scaffold import ChartScaffold
-# from lida.datamodel import Goal, Summary
+from llamaviz.utils import clean_code_snippet
+from llamaviz.components.scaffold import ChartScaffold
+from llamaviz.config.datamodel import TextGenerationConfig, TextGenerationResponse
+from llamaviz.config.generators.text.base_textgen import TextGenerator
+from llamaviz.datamodel import Goal, Summary
 
 
 system_prompt = """

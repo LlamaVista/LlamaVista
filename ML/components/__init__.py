@@ -1,2 +1,2 @@
-from config import TextGenerationConfig, llm, TextGenerator
-from manager import Manager
+#  from llamaviz.config import TextGenerationConfig, llm, TextGenerator
+from llamaviz.components.manager import Manager

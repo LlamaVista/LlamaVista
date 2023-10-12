@@ -1,7 +1,7 @@
 import json
 import logging
 from ..utils import clean_code_snippet
-from config import TextGenerator
+from llamaviz.config.generators.text.base_textgen import TextGenerator
 from ..datamodel import Persona, TextGenerationConfig
 
 

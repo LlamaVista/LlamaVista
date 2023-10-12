@@ -1,9 +1,9 @@
 from dataclasses import asdict
 from typing import Dict
-# from llmx import TextGenerator, TextGenerationConfig, TextGenerationResponse
-
+from llamaviz.config.datamodel import TextGenerationConfig, TextGenerationResponse
+from llamaviz.config.generators.text.base_textgen import TextGenerator
 from ..scaffold import ChartScaffold
-# from lida.datamodel import Goal
+from llamaviz.datamodel import Goal
 
 
 system_prompt = """

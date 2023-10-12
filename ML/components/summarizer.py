@@ -4,7 +4,7 @@ from typing import Union
 import pandas as pd
 from ..utils import clean_code_snippet, read_dataframe
 from ..datamodel import TextGenerationConfig
-from config import TextGenerator
+from llamaviz.config.generators.text.base_textgen import TextGenerator
 import warnings
 
 system_prompt = """

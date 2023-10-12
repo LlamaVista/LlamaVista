@@ -11,14 +11,15 @@ from typing import List, Union
 import logging
 
 import pandas as pd
-from config import llm, TextGenerator
-from ..datamodel import Goal, Summary, TextGenerationConfig, Persona
-from ..utils import read_dataframe
-from summarizer import Summarizer
-from goal import GoalExplorer
-from persona import PersonaExplorer
-from executor import ChartExecutor
-from viz import VizGenerator, VizEditor, VizExplainer, VizEvaluator, VizRepairer, VizRecommender
+from llamaviz.config.generators.text.textgen import llm
+from llamaviz.config.generators.text.base_textgen import TextGenerator
+from llamaviz.datamodel import Goal, Summary, TextGenerationConfig, Persona
+from llamaviz.utils import read_dataframe
+from llamaviz.components.summarizer import Summarizer
+from llamaviz.components.goal import GoalExplorer
+from llamaviz.components.persona import PersonaExplorer
+from llamaviz.components.executor import ChartExecutor
+from llamaviz.components.viz import VizGenerator, VizEditor, VizExplainer, VizEvaluator, VizRepairer, VizRecommender
 
 # import web as lida
 

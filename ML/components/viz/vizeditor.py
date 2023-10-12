@@ -1,6 +1,7 @@
-# from llmx import TextGenerator, TextGenerationConfig, TextGenerationResponse
+from llamaviz.config.datamodel import TextGenerationConfig, TextGenerationResponse
+from llamaviz.config.generators.text.base_textgen import TextGenerator
 from ..scaffold import ChartScaffold
-# from lida.datamodel import Goal, Summary
+from llamaviz.datamodel import Goal, Summary
 
 
 system_prompt = """

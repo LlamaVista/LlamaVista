@@ -2,7 +2,7 @@
 from dataclasses import field
 from typing import Any, Dict, List, Optional, Union
 
-from config import TextGenerationConfig
+from llamaviz.config.datamodel import TextGenerationConfig
 from pydantic.dataclasses import dataclass
 
 

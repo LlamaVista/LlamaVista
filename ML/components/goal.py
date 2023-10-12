@@ -1,8 +1,8 @@
 import json
 import logging
-from utils import clean_code_snippet
-from config import TextGenerator
-from ..datamodel import Goal, TextGenerationConfig, Persona
+from llamaviz.utils import clean_code_snippet
+from llamaviz.config.generators.text.base_textgen import TextGenerator
+from llamaviz.datamodel import Goal, TextGenerationConfig, Persona
 
 
 system_prompt = """You are a an experienced data analyst who can generate a given number of insightful GOALS about data, when given a summary of the data, and a specified persona. The VISUALIZATIONS YOU RECOMMEND MUST FOLLOW VISUALIZATION BEST PRACTICES (e.g., must use bar charts instead of pie charts for comparing quantities) AND BE MEANINGFUL (e.g., plot longitude and latitude on maps where appropriate). They must also be relevant to the specified persona. The goal must include a question, a visualization, and a rationale (justification of what we will learn from the visualization).

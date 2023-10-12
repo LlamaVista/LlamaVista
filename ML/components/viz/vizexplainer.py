@@ -1,7 +1,8 @@
 
 import json
-# from lida.utils import clean_code_snippet
-# from llmx import TextGenerator, TextGenerationConfig, TextGenerationResponse
+from llamaviz.utils import clean_code_snippet
+from llamaviz.config.datamodel import TextGenerationConfig, TextGenerationResponse
+from llamaviz.config.generators.text.base_textgen import TextGenerator
 from ..scaffold import ChartScaffold
 
 
