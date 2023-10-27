@@ -23,9 +23,12 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation group: 'com.microsoft.azure', name: 'azure-spring-boot-starter', version: '2.2.0'
+	implementation group: 'com.azure', name: 'azure-storage-blob', version: '12.24.0'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.mockito:mockito-core'
 }
 
 tasks.named('test') {
