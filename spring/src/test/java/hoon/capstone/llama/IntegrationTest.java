@@ -20,21 +20,31 @@ class IntegrationTest {
     private FileService fileService;
     @Autowired
     private BlobServiceClient blobServiceClient;
-    private final String testFileName = "testFile.txt";
+    private final String testFileName = "testFile.json";
     private final String containerName = "file";
     @BeforeEach
     void setup() throws Exception {
-        // 파일 업로드 준비
+        // JSON 파일 내용 준비
+        String jsonContent = "["
+                + "{\"key1\":\"value1\", \"key2\":\"value11\"},"
+                + "{\"key1\":\"value2\", \"key2\":\"value12\"},"
+                + "{\"key1\":\"value3\", \"key2\":\"value13\"},"
+                + "{\"key1\":\"value4\", \"key2\":\"value14\"},"
+                + "{\"key1\":\"value5\", \"key2\":\"value15\"}"
+                + "]";
+
+        // JSON 파일 업로드 준비
         MultipartFile mockFile = new MockMultipartFile(
                 "file",
                 testFileName,
-                "text/plain",
-                "This is a test file".getBytes()
+                "application/json",
+                jsonContent.getBytes()
         );
 
         // 파일 업로드
         fileService.upload(mockFile);
     }
+
     @Test
     void uploadFile() {
         BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
