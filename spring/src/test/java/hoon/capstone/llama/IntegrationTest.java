@@ -2,6 +2,8 @@ package hoon.capstone.llama;
 
 import com.azure.storage.blob.BlobContainerClient;
 import com.azure.storage.blob.BlobServiceClient;
+import hoon.capstone.llama.domain.ModelOutput;
+import hoon.capstone.llama.repository.OutputRepository;
 import hoon.capstone.llama.service.FileService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,7 +12,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 import static org.hibernate.validator.internal.util.Contracts.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @SpringBootTest
@@ -20,8 +25,12 @@ class IntegrationTest {
     private FileService fileService;
     @Autowired
     private BlobServiceClient blobServiceClient;
+    @Autowired
+    private OutputRepository outputRepository;
+
     private final String testFileName = "testFile.json";
     private final String containerName = "file";
+
     @BeforeEach
     void setup() throws Exception {
         // JSON 파일 내용 준비
@@ -56,5 +65,16 @@ class IntegrationTest {
         fileService.delete(testFileName);
         BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
         assertFalse(containerClient.getBlobClient(testFileName).exists(), "File should be deleted.");
+    }
+
+    @Test
+    void verifyDataSavedToDatabase() {
+        List<ModelOutput> outputs = outputRepository.findAll();
+        assertFalse(outputs.isEmpty(), "Data should be saved in the database.");
+
+        assertEquals("VALUE1", outputs.get(0).getKey1());
+        assertEquals("VALUE11", outputs.get(0).getKey2());
+        assertEquals("VALUE2", outputs.get(1).getKey1());
+        assertEquals("VALUE12", outputs.get(1).getKey2());
     }
 }
