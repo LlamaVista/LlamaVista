@@ -1,4 +1,4 @@
-package hoon.capstone.llama;
+package hoon.capstone.llama.config;
 
 import com.azure.storage.blob.BlobServiceClient;
 import com.azure.storage.blob.BlobServiceClientBuilder;
