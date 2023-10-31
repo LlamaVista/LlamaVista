@@ -1,10 +1,12 @@
 package hoon.capstone.llama.controller;
 
+import hoon.capstone.llama.domain.ModelOutput;
 import hoon.capstone.llama.service.FetchService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
@@ -30,11 +32,14 @@ public class FetchControllerTest {
 
     @Test
     void fetchDataTest() throws Exception {
-        String expectedResponse = "{\"key\":\"value\"}";
-        when(fetchService.fetchData(anyString())).thenReturn(expectedResponse);
+        ModelOutput expectedOutput = new ModelOutput();
+        expectedOutput.setKey1("value1");
+        expectedOutput.setKey2("value2");
+        when(fetchService.fetchData(anyString())).thenReturn(expectedOutput);
 
         mockMvc.perform(get("/fetch?blobName=testFile.json"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(expectedResponse));
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(content().json("{\"key1\":\"value1\",\"key2\":\"value2\"}"));
     }
 }

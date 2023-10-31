@@ -1,7 +1,9 @@
 package hoon.capstone.llama.controller;
 
+import hoon.capstone.llama.domain.ModelOutput;
 import hoon.capstone.llama.service.FetchService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,8 +20,8 @@ public class FetchController {
         this.fetchService = fetchService;
     }
 
-    @GetMapping
-    public String fetchData(@RequestParam(required = false) String blobName) {
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ModelOutput fetchData(@RequestParam String blobName) {
         return fetchService.fetchData(blobName);
     }
 }

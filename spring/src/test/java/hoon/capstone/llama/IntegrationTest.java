@@ -3,7 +3,7 @@ package hoon.capstone.llama;
 import com.azure.storage.blob.BlobContainerClient;
 import com.azure.storage.blob.BlobServiceClient;
 import hoon.capstone.llama.domain.ModelOutput;
-import hoon.capstone.llama.repository.OutputRepository;
+import hoon.capstone.llama.repository.ModelOutputRepository;
 import hoon.capstone.llama.service.FileService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -26,7 +26,7 @@ class IntegrationTest {
     @Autowired
     private BlobServiceClient blobServiceClient;
     @Autowired
-    private OutputRepository outputRepository;
+    private ModelOutputRepository outputRepository;
 
     private final String testFileName = "testFile.json";
     private final String containerName = "file";
