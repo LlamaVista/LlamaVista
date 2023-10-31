@@ -1,15 +1,35 @@
-from flask import Flask, jsonify, request
+from flask import Flask, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
 from azure.storage.blob import BlobServiceClient
 from dotenv import load_dotenv
 import os
 import json
 
 app = Flask(__name__)
-load_dotenv()  # 환경 변수 로드
+load_dotenv() 
 
-# 환경 변수에서 Azure Blob Storage 정보 가져오기
+# Azure Blob Storage 설정
 CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
+
+# 데이터베이스 설정
+app.config['SQLALCHEMY_DATABASE_URI'] = (
+    f"mysql+pymysql://{os.getenv('DB_USERNAME')}:{os.getenv('DB_PASSWORD')}"
+    f"@{os.getenv('DB_HOST')}/{os.getenv('DB_NAME')}"
+)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+
+# 데이터베이스 모델 정의
+class Output(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    key1 = db.Column(db.String(255), nullable=False)
+    key2 = db.Column(db.String(255), nullable=False)
+
+    def __repr__(self):
+        return f"<Output {self.id}>"
 
 
 @app.route('/read-json', methods=['GET'])
@@ -25,17 +45,19 @@ def read_json():
         blob_data = blob_client.download_blob().readall()
         json_data = json.loads(blob_data.decode('utf-8'))
 
-        # 모델 넣어서 반환하기!!!
+        # JSON 데이터 처리 및 데이터베이스에 저장
         if isinstance(json_data, list):
-            upper_json_data = [{k: v.upper() if isinstance(v, str) else v for k, v in item.items()}
-                               for item in json_data]
+            for item in json_data:
+                new_output = Output(key1=item.get('key1', '').upper(),
+                                    key2=item.get('key2', '').upper())
+                db.session.add(new_output)
+            db.session.commit()
+            return jsonify({"message": "Data successfully saved."}), 200
         else:
-            upper_json_data = json_data
-
-        # 대문자로 변환된 JSON 데이터 출력
-        return jsonify(upper_json_data)
+            return jsonify({"error": "Invalid JSON format"}), 400
     except Exception as e:
-        return str(e)
+        db.session.rollback()
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route('/')
