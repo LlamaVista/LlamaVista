@@ -8,6 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.List;
+
 @Service
 public class FetchService {
     private final RestTemplate restTemplate;
@@ -22,11 +24,12 @@ public class FetchService {
         this.modelOutputRepository = modelOutputRepository;
     }
 
-    public ModelOutput fetchData(String blobName) {
+    public List<ModelOutput> fetchData(String blobName) {
         String url = flaskEndpoint + "?blob_name=" + blobName;
         ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
         if (response.getStatusCode() == HttpStatus.OK) {
-            return modelOutputRepository.findById(1L).orElse(null);
+            // 추후 수정 일단 전체 파일 전부 다 가져옴
+            return modelOutputRepository.findAll();
         } else {
             return null;
         }

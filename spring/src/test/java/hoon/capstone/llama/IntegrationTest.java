@@ -4,19 +4,21 @@ import com.azure.storage.blob.BlobContainerClient;
 import com.azure.storage.blob.BlobServiceClient;
 import hoon.capstone.llama.domain.ModelOutput;
 import hoon.capstone.llama.repository.ModelOutputRepository;
+import hoon.capstone.llama.service.FetchService;
 import hoon.capstone.llama.service.FileService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.core.io.Resource;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 import static org.hibernate.validator.internal.util.Contracts.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class IntegrationTest {
@@ -25,6 +27,8 @@ class IntegrationTest {
     private FileService fileService;
     @Autowired
     private BlobServiceClient blobServiceClient;
+    @Autowired
+    private FetchService fetchService;
     @Autowired
     private ModelOutputRepository outputRepository;
 
@@ -68,10 +72,36 @@ class IntegrationTest {
     }
 
     @Test
+    void listFiles() {
+        List<String> files = fileService.listFiles();
+        assertNotNull(files, "Files list should not be null.");
+        assertFalse(files.isEmpty(), "Files list should not be empty.");
+        assertTrue(files.contains(testFileName), "Files list should contain the test file.");
+    }
+    @Test
+    void downloadFile() throws IOException {
+        Resource resource = fileService.download(testFileName);
+        assertNotNull(resource, "Downloaded resource should not be null.");
+        assertTrue(resource.exists(), "Downloaded resource should exist.");
+        assertTrue(resource.contentLength() > 0, "Downloaded file should have content.");
+    }
+
+    @Test
     void verifyDataSavedToDatabase() {
         List<ModelOutput> outputs = outputRepository.findAll();
         assertFalse(outputs.isEmpty(), "Data should be saved in the database.");
 
+        assertEquals("VALUE1", outputs.get(0).getKey1());
+        assertEquals("VALUE11", outputs.get(0).getKey2());
+        assertEquals("VALUE2", outputs.get(1).getKey1());
+        assertEquals("VALUE12", outputs.get(1).getKey2());
+    }
+
+    @Test
+    void verifyRequest() {
+        BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
+        assertTrue(containerClient.getBlobClient(testFileName).exists(), "File should be uploaded.");
+        List<ModelOutput> outputs = fetchService.fetchData(testFileName);
         assertEquals("VALUE1", outputs.get(0).getKey1());
         assertEquals("VALUE11", outputs.get(0).getKey2());
         assertEquals("VALUE2", outputs.get(1).getKey1());

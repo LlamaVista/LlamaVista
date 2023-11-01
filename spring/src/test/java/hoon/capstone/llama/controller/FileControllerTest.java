@@ -5,6 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.web.servlet.MockMvc;
@@ -12,6 +14,8 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.net.URI;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
@@ -62,5 +66,32 @@ class FileControllerTest {
                 .andExpect(content().string("File deleted successfully."));
 
         verify(fileService, times(1)).delete(filename);
+    }
+    @Test
+    void listFiles() throws Exception {
+        List<String> fileList = Arrays.asList("file1.txt", "file2.txt");
+        when(fileService.listFiles()).thenReturn(fileList);
+
+        mockMvc.perform(get("/list").accept(MediaType.APPLICATION_JSON)) // Ensure to accept JSON
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON)) // Check content type
+                .andExpect(content().json("[\"file1.txt\",\"file2.txt\"]"));
+
+        verify(fileService, times(1)).listFiles();
+    }
+
+    @Test
+    void downloadFile() throws Exception {
+        String filename = "test.txt";
+        byte[] fileContent = "This is a test file".getBytes();
+        Resource resource = new ByteArrayResource(fileContent);
+
+        when(fileService.download(filename)).thenReturn(resource);
+
+        mockMvc.perform(get("/download/{filename}", filename))
+                .andExpect(status().isOk())
+                .andExpect(content().bytes(fileContent));
+
+        verify(fileService, times(1)).download(filename);
     }
 }

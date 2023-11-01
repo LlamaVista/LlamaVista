@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/fetch")
 public class FetchController {
@@ -21,7 +23,7 @@ public class FetchController {
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ModelOutput fetchData(@RequestParam String blobName) {
+    public List<ModelOutput> fetchData(@RequestParam String blobName) {
         return fetchService.fetchData(blobName);
     }
 }

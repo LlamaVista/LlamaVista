@@ -10,18 +10,20 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import static org.mockito.ArgumentMatchers.anyString;
+import java.util.List;
+
+import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-public class FetchControllerTest {
+class FetchControllerTest {
+
+    private MockMvc mockMvc;
 
     @Mock
     private FetchService fetchService;
-
-    private MockMvc mockMvc;
 
     @BeforeEach
     void setUp() {
@@ -31,15 +33,19 @@ public class FetchControllerTest {
     }
 
     @Test
-    void fetchDataTest() throws Exception {
-        ModelOutput expectedOutput = new ModelOutput();
-        expectedOutput.setKey1("value1");
-        expectedOutput.setKey2("value2");
-        when(fetchService.fetchData(anyString())).thenReturn(expectedOutput);
+    void fetchData_Success() throws Exception {
+        String blobName = "testBlob";
+        List<ModelOutput> mockOutputs = List.of(new ModelOutput("value1", "value11"));
 
-        mockMvc.perform(get("/fetch?blobName=testFile.json"))
+        when(fetchService.fetchData(blobName)).thenReturn(mockOutputs);
+
+        mockMvc.perform(get("/fetch")
+                        .param("blobName", blobName)
+                        .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json("{\"key1\":\"value1\",\"key2\":\"value2\"}"));
+                .andExpect(jsonPath("$", hasSize(1)))
+                .andExpect(jsonPath("$[0].key1", is("value1")))
+                .andExpect(jsonPath("$[0].key2", is("value11")));
     }
 }

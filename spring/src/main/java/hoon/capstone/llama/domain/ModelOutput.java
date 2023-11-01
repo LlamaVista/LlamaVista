@@ -10,7 +10,6 @@ import lombok.ToString;
 @Table(name = "output")
 @Getter
 @Setter
-@NoArgsConstructor
 @ToString
 public class ModelOutput {
 
@@ -23,4 +22,11 @@ public class ModelOutput {
 
     @Column(name = "key2", nullable = false)
     private String key2;
+
+    public ModelOutput() {}
+
+    public ModelOutput(String key1, String key2) {
+        this.key1 = key1;
+        this.key2 = key2;
+    }
 }
