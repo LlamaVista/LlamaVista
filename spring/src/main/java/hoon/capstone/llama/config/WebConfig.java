@@ -17,7 +17,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(@Nullable CorsRegistry registry) {
                 Objects.requireNonNull(registry).addMapping("/**")
-                        .allowedOrigins("*")
+                        .allowedOrigins("http://localhost:3000", "http://localhost:8080")
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*")
                         .allowCredentials(true);

@@ -35,7 +35,7 @@ class Output(db.Model):
 @app.route('/read-json', methods=['GET'])
 def read_json():
     try:
-        blob_name = request.args.get('blob_name', 'testFile.json')
+        blob_name = request.args.get('blob_name', 'origin.json')
 
         # Blob Service 클라이언트 초기화
         blob_service_client = BlobServiceClient.from_connection_string(CONNECTION_STRING)

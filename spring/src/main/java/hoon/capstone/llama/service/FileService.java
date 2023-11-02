@@ -4,6 +4,7 @@ import com.azure.storage.blob.BlobClient;
 import com.azure.storage.blob.BlobContainerClient;
 import com.azure.storage.blob.BlobServiceClient;
 import com.azure.storage.blob.models.BlobItem;
+import com.azure.storage.blob.models.BlobStorageException;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
@@ -53,9 +54,12 @@ public class FileService {
         BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient("file");
         BlobClient blobClient = containerClient.getBlobClient(filename);
 
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        blobClient.downloadStream(outputStream);
-
-        return new ByteArrayResource(outputStream.toByteArray());
+        try (ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
+            blobClient.downloadStream(outputStream);
+            return new ByteArrayResource(outputStream.toByteArray());
+        } catch (BlobStorageException e) {
+            // Blob Storage 관련 예외 처리
+            throw new IOException("Blob Storage에서 파일을 다운로드하는 중 오류 발생: " + e.getMessage());
+        }
     }
 }

@@ -6,7 +6,6 @@ import hoon.capstone.llama.domain.ModelOutput;
 import hoon.capstone.llama.repository.ModelOutputRepository;
 import hoon.capstone.llama.service.FetchService;
 import hoon.capstone.llama.service.FileService;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -32,11 +31,9 @@ class IntegrationTest {
     @Autowired
     private ModelOutputRepository outputRepository;
 
-    private final String testFileName = "testFile.json";
     private final String containerName = "file";
 
-    @BeforeEach
-    void setup() throws Exception {
+    void uploadTestFile(String fileName) throws Exception {
         // JSON 파일 내용 준비
         String jsonContent = "["
                 + "{\"key1\":\"value1\", \"key2\":\"value11\"},"
@@ -49,7 +46,7 @@ class IntegrationTest {
         // JSON 파일 업로드 준비
         MultipartFile mockFile = new MockMultipartFile(
                 "file",
-                testFileName,
+                fileName,
                 "application/json",
                 jsonContent.getBytes()
         );
@@ -59,28 +56,34 @@ class IntegrationTest {
     }
 
     @Test
-    void uploadFile() {
+    void uploadFile() throws Exception {
+        String testFileName = "testFile2.json";
+        uploadTestFile(testFileName);
         BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
         assertTrue(containerClient.getBlobClient(testFileName).exists(), "File should be uploaded.");
     }
 
+
     @Test
     void deleteFile() throws Exception {
-        fileService.delete(testFileName);
+        fileService.delete("testFile.json");
         BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
-        assertFalse(containerClient.getBlobClient(testFileName).exists(), "File should be deleted.");
+        assertFalse(containerClient.getBlobClient("testFile.json").exists(), "File should be deleted.");
     }
 
     @Test
     void listFiles() {
         List<String> files = fileService.listFiles();
+        for (String file: files) {
+            System.out.println(file);
+        }
         assertNotNull(files, "Files list should not be null.");
         assertFalse(files.isEmpty(), "Files list should not be empty.");
-        assertTrue(files.contains(testFileName), "Files list should contain the test file.");
+        assertTrue(files.contains("testFile.json"), "Files list should contain the test file.");
     }
     @Test
     void downloadFile() throws IOException {
-        Resource resource = fileService.download(testFileName);
+        Resource resource = fileService.download("testFile.json");
         assertNotNull(resource, "Downloaded resource should not be null.");
         assertTrue(resource.exists(), "Downloaded resource should exist.");
         assertTrue(resource.contentLength() > 0, "Downloaded file should have content.");
@@ -100,8 +103,8 @@ class IntegrationTest {
     @Test
     void verifyRequest() {
         BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
-        assertTrue(containerClient.getBlobClient(testFileName).exists(), "File should be uploaded.");
-        List<ModelOutput> outputs = fetchService.fetchData(testFileName);
+        assertTrue(containerClient.getBlobClient("testFile.json").exists(), "File should be uploaded.");
+        List<ModelOutput> outputs = fetchService.fetchData("testFile.json");
         assertEquals("VALUE1", outputs.get(0).getKey1());
         assertEquals("VALUE11", outputs.get(0).getKey2());
         assertEquals("VALUE2", outputs.get(1).getKey1());
