@@ -1,0 +1,4 @@
+[submodule "spring/src/main/resources"]
+	path = spring/src/main/resources
+	url = https://github.com/LlamaVista/security.git
+	branch = master
