@@ -11,14 +11,6 @@ public class SettingsService {
 
     private Settings settings;
 
-    public SettingsService() {
-        this.settings = new Settings();
-        this.settings.setMaxTokens(6336);
-        this.settings.setNumberMessages(1);
-        this.settings.setPresencePenalty(-2);
-        this.settings.setFrequencyPenalty(-2);
-    }
-
     @Cacheable("settings")
     public Settings getSettings() {
         return settings;
