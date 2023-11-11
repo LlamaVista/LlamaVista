@@ -3,19 +3,21 @@ package hoon.capstone.llama.controller;
 import hoon.capstone.llama.domain.Settings;
 import hoon.capstone.llama.service.RequestService;
 import hoon.capstone.llama.service.SettingsService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.util.List;
 
 @RestController
 public class RequestController {
     private final RequestService requestService;
     private final SettingsService settingsService;
+
+    @Value("${flask.app.url}")
+    private String URL;
 
     public RequestController(RequestService requestService, SettingsService settingsService) {
         this.requestService = requestService;
@@ -35,7 +37,7 @@ public class RequestController {
         settingsService.updateSettings(settings);
 
         try {
-            return requestService.sendFileAndData(file, settings, userMessages, "http://localhost:5000/process");
+            return requestService.sendFileAndData(file, settings, userMessages, URL);
         } catch (IOException e) {
             return "Error: " + e.getMessage();
         }
