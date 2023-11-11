@@ -35,7 +35,7 @@ def process_data():
     settings_json = request.form.get('settings')
     user_messages_json = request.form.get('message')
     user_messages = json.loads(user_messages_json)
-    callback_url = 'http://localhost:8080'
+    callback_url = os.getenv('SPRING_URL')
     process(file, settings_json, user_messages, callback_url)
     return jsonify({"message": "Processing started"})
 
@@ -50,13 +50,11 @@ def run_summarizer(file, settings, client_message):
 
 
 def run_goal_explorer(summarizer_result):
-    print('goal_explorer')
-    return summarizer_result
+    return 'goal explorer'
 
 
 def run_visualization(goal_explorer_result):
-    print('visualization')
-    return goal_explorer_result
+    return 'visualization'
 
 
 if __name__ == '__main__':
