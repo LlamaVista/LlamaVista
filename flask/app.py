@@ -9,7 +9,7 @@ from model.summarizer import Summarizer, to_json
 
 app = Flask(__name__)
 CORS(app)
-load_dotenv()
+load_dotenv('env/.env')
 
 
 @app.route('/')

@@ -2,3 +2,6 @@
 	path = spring/src/main/resources
 	url = https://github.com/LlamaVista/security.git
 	branch = master
+[submodule "flask/env"]
+	path = flask/env
+	url = https://github.com/LlamaVista/flask_env.git
