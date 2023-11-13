@@ -9,6 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class Settings {
+    private Grammar grammar;
     private int maxTokens;
     private double temperature;
     private int numberMessages;
@@ -16,6 +17,7 @@ public class Settings {
     private double frequencyPenalty;
 
     public Settings() {
+        this.grammar = Grammar.SEABORN;
         this.maxTokens = 6336;
         this.temperature = 0;
         this.numberMessages = 1;

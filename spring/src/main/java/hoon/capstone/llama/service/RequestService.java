@@ -1,9 +1,7 @@
 package hoon.capstone.llama.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import hoon.capstone.llama.domain.Settings;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -18,8 +16,11 @@ import java.io.IOException;
 
 @Service
 public class RequestService {
-    @Autowired
-    private RestTemplate restTemplate;
+    private final RestTemplate restTemplate;
+
+    public RequestService(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
 
     public String sendFileAndData(MultipartFile file, Settings settings, String userMessage, String flaskUrl)
             throws IOException {

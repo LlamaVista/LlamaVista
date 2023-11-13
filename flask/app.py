@@ -20,13 +20,13 @@ def hello_world():
 def process(file, settings_json, user_messages, callback_url):
     try:
         summarizer_result = run_summarizer(file, settings_json, user_messages)
-        requests.post(callback_url + "/summarizer", json={"step": "summarizer", "result": summarizer_result})
+        requests.get(callback_url + "/summarizer", json={"step": "summarizer", "result": summarizer_result})
         goal_explorer_result = run_goal_explorer(summarizer_result)
-        requests.post(callback_url + "/goal_explorer", json={"step": "goal_explorer", "result": goal_explorer_result})
+        requests.get(callback_url + "/goal_explorer", json={"step": "goal_explorer", "result": goal_explorer_result})
         visualization_result = run_visualization(goal_explorer_result)
-        requests.post(callback_url + "/visualization", json={"step": "visualization", "result": visualization_result})
+        requests.get(callback_url + "/visualization", json={"step": "visualization", "result": visualization_result})
     except Exception as e:
-        requests.post(callback_url + "/summarizer", json={"step": "error", "result": str(e)})
+        requests.get(callback_url + "/summarizer", json={"step": "error", "result": str(e)})
 
 
 @app.route('/process', methods=['POST'])

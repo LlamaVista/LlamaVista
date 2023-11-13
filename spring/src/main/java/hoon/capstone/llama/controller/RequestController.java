@@ -1,8 +1,10 @@
 package hoon.capstone.llama.controller;
 
+import hoon.capstone.llama.domain.Grammar;
 import hoon.capstone.llama.domain.Settings;
 import hoon.capstone.llama.service.RequestService;
 import hoon.capstone.llama.service.SettingsService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 
+@Tag(name = "Request", description = "flask에 request")
 @RestController
 public class RequestController {
     private final RequestService requestService;
@@ -26,6 +29,7 @@ public class RequestController {
 
     @PostMapping("/send")
     public String sendDataToFlask(@RequestParam("file") MultipartFile file,
+                                  @RequestParam("grammar") Grammar grammar,
                                   @RequestParam("maxTokens") int maxTokens,
                                   @RequestParam("temperature") double temperature,
                                   @RequestParam("numberMessages") int numberMessages,
@@ -33,7 +37,7 @@ public class RequestController {
                                   @RequestParam("frequencyPenalty") double frequencyPenalty,
                                   @RequestParam("userMessage") String userMessages) {
 
-        Settings settings = new Settings(maxTokens, temperature, numberMessages, presencePenalty, frequencyPenalty);
+        Settings settings = new Settings(grammar, maxTokens, temperature, numberMessages, presencePenalty, frequencyPenalty);
         settingsService.updateSettings(settings);
 
         try {
