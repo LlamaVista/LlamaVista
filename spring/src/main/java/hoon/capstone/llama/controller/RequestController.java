@@ -25,6 +25,7 @@ public class RequestController {
 
     @PostMapping("/send")
     public String sendDataToFlask(@ModelAttribute Request request) {
+        System.out.println(request);
         Settings settings = new Settings(request.getGrammar(), request.getMaxTokens(),
                 request.getTemperature(), request.getNumberMessages(),
                 request.getPresencePenalty(), request.getFrequencyPenalty());

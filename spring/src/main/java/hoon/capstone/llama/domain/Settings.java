@@ -10,9 +10,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Settings {
     private Grammar grammar;
-    private int maxTokens;
+    private Integer maxTokens;
     private double temperature;
-    private int numberMessages;
+    private Integer numberMessages;
     private double presencePenalty;
     private double frequencyPenalty;
 }
