@@ -11,6 +11,4 @@ public class FileConfig {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
-    @Bean
-    public Settings settings() {return new Settings();}
 }
