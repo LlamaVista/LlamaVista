@@ -11,8 +11,8 @@ import lombok.Setter;
 public class Settings {
     private Grammar grammar;
     private Integer maxTokens;
-    private double temperature;
+    private Double temperature;
     private Integer numberMessages;
-    private double presencePenalty;
-    private double frequencyPenalty;
+    private Double presencePenalty;
+    private Double frequencyPenalty;
 }
