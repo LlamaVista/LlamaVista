@@ -33,8 +33,7 @@ def process(file, settings_json, user_messages, callback_url):
 def process_data():
     file = request.files.get('file')
     settings_json = request.form.get('settings')
-    user_messages_json = request.form.get('message')
-    user_messages = json.loads(user_messages_json)
+    user_messages = request.form.get('message')
     callback_url = os.getenv('SPRING_URL')
     process(file, settings_json, user_messages, callback_url)
     return jsonify({"message": "Processing started"})
