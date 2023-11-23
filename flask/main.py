@@ -1,11 +1,12 @@
 from fastapi import FastAPI, File, UploadFile, Form
 import os
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from dotenv import load_dotenv
 from model.summarizer import OpenAIManager
 
 app = FastAPI()
-
+app.mount("/static", StaticFiles(directory="static"), name="static")
 load_dotenv('env/.env')
 
 

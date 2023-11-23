@@ -40,7 +40,7 @@ class OpenAIManager:
                         image_bytes = io.BytesIO(image.content)
                         img = Image.open(image_bytes)
                         plt.imshow(img)
-                        plt.savefig(f'images/{content.image_file.file_id}.png')
+                        plt.savefig(f'static/images/{content.image_file.file_id}.png')
                         plt.show()
         print()
 
