@@ -46,8 +46,7 @@ async def receive_data(file: UploadFile = File(...), grammar: str = Form(...), m
     thread, run = manager.create_thread_and_run(assistant, prompt)
     run = manager.wait_on_run(run, thread)
     response = manager.get_response(thread)
-
-    print(response)
+    manager.pretty_print(manager.get_response(thread))
 
     return response
 
