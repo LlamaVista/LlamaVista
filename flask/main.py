@@ -11,7 +11,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 load_dotenv('env/.env')
 origins = [
     "http://localhost",
-    "http://localhost:3000",
+    "http://localhost:3000"
+    "http://localhost:8000",
 ]
 
 app.add_middleware(
