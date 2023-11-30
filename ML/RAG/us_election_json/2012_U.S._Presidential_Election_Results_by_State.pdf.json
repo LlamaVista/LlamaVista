@@ -1,0 +1,3105 @@
+[
+  {
+    "type": "Title",
+    "element_id": "e4682e0bc0351c03e3ca2e310803350f",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            329.1499,
+            34.83609999999999
+          ],
+          [
+            329.1499,
+            52.83609999999999
+          ],
+          [
+            643.1599,
+            52.83609999999999
+          ],
+          [
+            643.1599,
+            34.83609999999999
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "2012 Presidential Election Results by State"
+  },
+  {
+    "type": "Title",
+    "element_id": "5ebc306ce07b01e06a26704087706d47",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            92.0005,
+            70.3542000000001
+          ],
+          [
+            92.0005,
+            97.005
+          ],
+          [
+            152.27650000000003,
+            97.005
+          ],
+          [
+            152.27650000000003,
+            70.3542000000001
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "12 Washington"
+  },
+  {
+    "type": "Title",
+    "element_id": "98cb6fe0cea04041f2775c654d4148dc",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            80.98820000000002,
+            123.45619999999997
+          ],
+          [
+            80.98820000000002,
+            137.45619999999997
+          ],
+          [
+            125.36820000000002,
+            137.45619999999997
+          ],
+          [
+            125.36820000000002,
+            123.45619999999997
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Oregon"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "7902699be42c8a8e46fbbb4501726517",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            132.7095,
+            123.45620000000008
+          ],
+          [
+            132.7095,
+            137.45620000000008
+          ],
+          [
+            139.89149999999998,
+            137.45620000000008
+          ],
+          [
+            139.89149999999998,
+            123.45620000000008
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "98cb6fe0cea04041f2775c654d4148dc",
+      "page_number": 1
+    },
+    "text": "7"
+  },
+  {
+    "type": "Title",
+    "element_id": "c0d33df46581cf588c39767ba092b6e9",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            107.8159,
+            184.13590000000005
+          ],
+          [
+            107.8159,
+            214.6662
+          ],
+          [
+            152.1119,
+            214.6662
+          ],
+          [
+            152.1119,
+            184.13590000000005
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Nevada 6"
+  },
+  {
+    "type": "Title",
+    "element_id": "cad0535decc38b248b40e7aef9a1cfd9",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            76.6665,
+            241.5079
+          ],
+          [
+            76.6665,
+            253.5079
+          ],
+          [
+            124.12650000000001,
+            253.5079
+          ],
+          [
+            124.12650000000001,
+            241.5079
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "California"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "02d20bbd7e394ad5999a4cebabac9619",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            103.4131,
+            256.85560000000004
+          ],
+          [
+            103.4131,
+            268.85560000000004
+          ],
+          [
+            115.72510000000001,
+            268.85560000000004
+          ],
+          [
+            115.72510000000001,
+            256.85560000000004
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "cad0535decc38b248b40e7aef9a1cfd9",
+      "page_number": 1
+    },
+    "text": "55"
+  },
+  {
+    "type": "Title",
+    "element_id": "30b35eacfc08617f121e2330490175ec",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            203.5952,
+            100.12120000000004
+          ],
+          [
+            203.5952,
+            114.12120000000004
+          ],
+          [
+            256.2352,
+            114.12120000000004
+          ],
+          [
+            256.2352,
+            100.12120000000004
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Montana"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "4e07408562bedb8b60ce05c1decfe3ad",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            266.6615,
+            100.11820000000012
+          ],
+          [
+            266.6615,
+            114.11820000000012
+          ],
+          [
+            273.8435,
+            114.11820000000012
+          ],
+          [
+            273.8435,
+            100.11820000000012
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "30b35eacfc08617f121e2330490175ec",
+      "page_number": 1
+    },
+    "text": "3"
+  },
+  {
+    "type": "Title",
+    "element_id": "3520cdd3e83b99ea2ef48ec47e005830",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            155.90220000000002,
+            143.51819999999998
+          ],
+          [
+            155.90220000000002,
+            157.51819999999998
+          ],
+          [
+            189.34820000000005,
+            157.51819999999998
+          ],
+          [
+            189.34820000000005,
+            143.51819999999998
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Idaho"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "4b227777d4dd1fc61c6f884f48641d02",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            196.0,
+            144.5304
+          ],
+          [
+            196.0,
+            158.5304
+          ],
+          [
+            203.182,
+            158.5304
+          ],
+          [
+            203.182,
+            144.5304
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "3520cdd3e83b99ea2ef48ec47e005830",
+      "page_number": 1
+    },
+    "text": "4"
+  },
+  {
+    "type": "Title",
+    "element_id": "dd44f496fada3dcb07169ef2aee0fa3c",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            215.9992,
+            146.8252000000001
+          ],
+          [
+            215.9992,
+            160.8252000000001
+          ],
+          [
+            272.47520000000003,
+            160.8252000000001
+          ],
+          [
+            272.47520000000003,
+            146.8252000000001
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Wyoming"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "4e07408562bedb8b60ce05c1decfe3ad",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            262.3406,
+            168.66219999999998
+          ],
+          [
+            262.3406,
+            182.66219999999993
+          ],
+          [
+            269.5226,
+            182.66219999999993
+          ],
+          [
+            269.5226,
+            168.66219999999998
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "dd44f496fada3dcb07169ef2aee0fa3c",
+      "page_number": 1
+    },
+    "text": "3"
+  },
+  {
+    "type": "Title",
+    "element_id": "82bce10b5f88da7cb5c7ae0605298a1b",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            173.9992,
+            191.4992000000001
+          ],
+          [
+            173.9992,
+            205.4992000000001
+          ],
+          [
+            202.26520000000002,
+            205.4992000000001
+          ],
+          [
+            202.26520000000002,
+            191.4992000000001
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Utah"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "e7f6c011776e8db7cd330b54174fd76f",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            209.4906,
+            193.26019999999994
+          ],
+          [
+            209.4906,
+            207.26019999999994
+          ],
+          [
+            216.6726,
+            207.26019999999994
+          ],
+          [
+            216.6726,
+            193.26019999999994
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "82bce10b5f88da7cb5c7ae0605298a1b",
+      "page_number": 1
+    },
+    "text": "6"
+  },
+  {
+    "type": "Title",
+    "element_id": "4ae62bf4e80482de70a88dff036b9c6e",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            228.73020000000002,
+            214.16219999999998
+          ],
+          [
+            228.73020000000002,
+            228.16219999999998
+          ],
+          [
+            282.2102,
+            228.16219999999998
+          ],
+          [
+            282.2102,
+            214.16219999999998
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Colorado"
+  },
+  {
+    "type": "Title",
+    "element_id": "f2274036b50dbde4f969a7d9d88725bb",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            156.4062,
+            268.3702
+          ],
+          [
+            156.4062,
+            282.3702
+          ],
+          [
+            200.9402,
+            282.3702
+          ],
+          [
+            200.9402,
+            268.3702
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Arizona"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "4fc82b26aecb47d2868c4efbe3581732",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            179.3335,
+            285.89860000000004
+          ],
+          [
+            179.3335,
+            299.89860000000004
+          ],
+          [
+            193.69749999999996,
+            299.89860000000004
+          ],
+          [
+            193.69749999999996,
+            285.89860000000004
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "f2274036b50dbde4f969a7d9d88725bb",
+      "page_number": 1
+    },
+    "text": "11"
+  },
+  {
+    "type": "Title",
+    "element_id": "ece5c5b77a971384e8c88cc8091841d4",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            219.33309999999994,
+            277.31
+          ],
+          [
+            219.33309999999994,
+            289.31
+          ],
+          [
+            280.5703,
+            289.31
+          ],
+          [
+            280.5703,
+            277.31
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "New Mexico"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "4b227777d4dd1fc61c6f884f48641d02",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            255.336,
+            290.9438
+          ],
+          [
+            255.336,
+            304.9438
+          ],
+          [
+            262.51800000000003,
+            304.9438
+          ],
+          [
+            262.51800000000003,
+            290.9438
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "ece5c5b77a971384e8c88cc8091841d4",
+      "page_number": 1
+    },
+    "text": "4"
+  },
+  {
+    "type": "Title",
+    "element_id": "f6952a900a9c53be5841f110d2aa3c07",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            302.3184,
+            96.87810000000002
+          ],
+          [
+            302.3184,
+            127.67809999999997
+          ],
+          [
+            344.0244,
+            127.67809999999997
+          ],
+          [
+            344.0244,
+            96.87810000000002
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "North Dakota"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "4e07408562bedb8b60ce05c1decfe3ad",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            348.6595,
+            96.87020000000007
+          ],
+          [
+            348.6595,
+            110.87020000000007
+          ],
+          [
+            355.8415,
+            110.87020000000007
+          ],
+          [
+            355.8415,
+            96.87020000000007
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "f6952a900a9c53be5841f110d2aa3c07",
+      "page_number": 1
+    },
+    "text": "3"
+  },
+  {
+    "type": "Title",
+    "element_id": "e4b827115332247a8c70757498adfada",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            363.5786,
+            106.50790000000006
+          ],
+          [
+            363.5786,
+            132.34879999999998
+          ],
+          [
+            414.3971,
+            132.34879999999998
+          ],
+          [
+            414.3971,
+            106.50790000000006
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Minnesota 10"
+  },
+  {
+    "type": "Title",
+    "element_id": "0f9d27b0544545655a60db551ec7213c",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            287.1357,
+            179.82920000000001
+          ],
+          [
+            287.1357,
+            193.82920000000001
+          ],
+          [
+            341.6923,
+            193.82920000000001
+          ],
+          [
+            341.6923,
+            179.82920000000001
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Nebraska"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "19581e27de7ced00ff1ce50b2047e7a5",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            289.8086,
+            214.16220000000004
+          ],
+          [
+            289.8086,
+            228.16220000000004
+          ],
+          [
+            296.99060000000003,
+            228.16220000000004
+          ],
+          [
+            296.99060000000003,
+            214.16220000000004
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "0f9d27b0544545655a60db551ec7213c",
+      "page_number": 1
+    },
+    "text": "9"
+  },
+  {
+    "type": "Title",
+    "element_id": "a1f8fb33dd5cfed620fafd9fb67234f9",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            300.6664,
+            136.84809999999993
+          ],
+          [
+            300.6664,
+            167.64809999999989
+          ],
+          [
+            342.3724,
+            167.64809999999989
+          ],
+          [
+            342.3724,
+            136.84809999999993
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "South Dakota"
+  },
+  {
+    "type": "Title",
+    "element_id": "79f6d0732a249abcadeedfe56cf50294",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            318.96020000000004,
+            224.10219999999998
+          ],
+          [
+            318.96020000000004,
+            238.10219999999998
+          ],
+          [
+            359.12620000000004,
+            238.10219999999998
+          ],
+          [
+            359.12620000000004,
+            224.10219999999998
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Kansas"
+  },
+  {
+    "type": "Title",
+    "element_id": "dedf59d8ebb9015a52215c6e6a65139b",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            329.1465,
+            265.6639
+          ],
+          [
+            329.1465,
+            294.53619999999995
+          ],
+          [
+            437.4945,
+            294.53619999999995
+          ],
+          [
+            437.4945,
+            265.6639
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Oklahoma Arkansas 7"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "4e07408562bedb8b60ce05c1decfe3ad",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            346.0,
+            137.05579999999998
+          ],
+          [
+            346.0,
+            151.05579999999998
+          ],
+          [
+            353.182,
+            151.05579999999998
+          ],
+          [
+            353.182,
+            137.05579999999998
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "dedf59d8ebb9015a52215c6e6a65139b",
+      "page_number": 1
+    },
+    "text": "3"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "ef2d127de37b942baad06145e54b0c61",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            352.6635,
+            180.98220000000003
+          ],
+          [
+            352.6635,
+            194.98220000000003
+          ],
+          [
+            359.8455,
+            194.98220000000003
+          ],
+          [
+            359.8455,
+            180.98220000000003
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "dedf59d8ebb9015a52215c6e6a65139b",
+      "page_number": 1
+    },
+    "text": "5"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "e7f6c011776e8db7cd330b54174fd76f",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            365.8154,
+            224.94150000000002
+          ],
+          [
+            365.8154,
+            238.94150000000002
+          ],
+          [
+            372.9974,
+            238.94150000000002
+          ],
+          [
+            372.9974,
+            224.94150000000002
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "dedf59d8ebb9015a52215c6e6a65139b",
+      "page_number": 1
+    },
+    "text": "6"
+  },
+  {
+    "type": "Title",
+    "element_id": "722b29f28253f1f052f418a1dae45b00",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            383.1264,
+            179.8280999999999
+          ],
+          [
+            383.1264,
+            193.8280999999999
+          ],
+          [
+            411.0564,
+            193.8280999999999
+          ],
+          [
+            411.0564,
+            179.8280999999999
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Iowa"
+  },
+  {
+    "type": "Title",
+    "element_id": "7f2adc96465531854cf24c6735b9768b",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            392.1675,
+            230.5011
+          ],
+          [
+            392.1675,
+            257.14220000000006
+          ],
+          [
+            436.2995,
+            257.14220000000006
+          ],
+          [
+            436.2995,
+            230.5011
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Missouri 10"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "e7f6c011776e8db7cd330b54174fd76f",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            406.6665,
+            287.39860000000004
+          ],
+          [
+            406.6665,
+            299.39860000000004
+          ],
+          [
+            412.8225,
+            299.39860000000004
+          ],
+          [
+            412.8225,
+            287.39860000000004
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "7f2adc96465531854cf24c6735b9768b",
+      "page_number": 1
+    },
+    "text": "6"
+  },
+  {
+    "type": "Title",
+    "element_id": "9c9950c85a05d11b0758babe270fbb30",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            410.3345,
+            136.173
+          ],
+          [
+            410.3345,
+            147.173
+          ],
+          [
+            456.4355,
+            147.173
+          ],
+          [
+            456.4355,
+            136.173
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Wisconsin"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "e7f6c011776e8db7cd330b54174fd76f",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            417.4326,
+            179.8342
+          ],
+          [
+            417.4326,
+            193.8342
+          ],
+          [
+            424.6146,
+            193.8342
+          ],
+          [
+            424.6146,
+            179.8342
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "9c9950c85a05d11b0758babe270fbb30",
+      "page_number": 1
+    },
+    "text": "6"
+  },
+  {
+    "type": "Title",
+    "element_id": "1d721c8697aece305b8b237c78c4797f",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            431.6323,
+            200.07340000000005
+          ],
+          [
+            431.6323,
+            229.95340000000004
+          ],
+          [
+            463.9003,
+            229.95340000000004
+          ],
+          [
+            463.9003,
+            200.07340000000005
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Illinois 20"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "4a44dc15364204a80fe80e9039455cc1",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            435.9048,
+            156.98479999999995
+          ],
+          [
+            435.9048,
+            168.98479999999995
+          ],
+          [
+            448.21680000000003,
+            168.98479999999995
+          ],
+          [
+            448.21680000000003,
+            156.98479999999995
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "1d721c8697aece305b8b237c78c4797f",
+      "page_number": 1
+    },
+    "text": "10"
+  },
+  {
+    "type": "Title",
+    "element_id": "0f508660b269e506a0a8d75a779c9308",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            455.3265,
+            262.1719
+          ],
+          [
+            455.3265,
+            274.1719
+          ],
+          [
+            507.3105,
+            274.1719
+          ],
+          [
+            507.3105,
+            262.1719
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Tennessee"
+  },
+  {
+    "type": "Title",
+    "element_id": "0b72a8ba25a04f684444d45420cad969",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            467.9268,
+            201.79840000000007
+          ],
+          [
+            467.9268,
+            223.53040000000004
+          ],
+          [
+            498.20050000000003,
+            223.53040000000004
+          ],
+          [
+            498.20050000000003,
+            201.79840000000007
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Indiana 11"
+  },
+  {
+    "type": "Title",
+    "element_id": "e21e1b5905ae275e9de271b8615785ba",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            469.583,
+            239.28820000000002
+          ],
+          [
+            469.583,
+            266.1179000000001
+          ],
+          [
+            516.9758,
+            266.1179000000001
+          ],
+          [
+            516.9758,
+            239.28820000000002
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Kentucky 11"
+  },
+  {
+    "type": "Title",
+    "element_id": "5988cbe82db7458b33f76a1bec2a39dd",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            478.6909,
+            158.0109
+          ],
+          [
+            478.6909,
+            180.39679999999998
+          ],
+          [
+            517.5209,
+            180.39679999999998
+          ],
+          [
+            517.5209,
+            158.0109
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Michigan 16"
+  },
+  {
+    "type": "Title",
+    "element_id": "e027dd0c32efb42a117ebc199322a0b4",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            507.33439999999996,
+            193.25409999999988
+          ],
+          [
+            507.33439999999996,
+            218.65279999999996
+          ],
+          [
+            535.7124,
+            218.65279999999996
+          ],
+          [
+            535.7124,
+            193.25409999999988
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Ohio 18"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "2c624232cdd221771294dfbb310aca00",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            518.2264,
+            239.4133
+          ],
+          [
+            518.2264,
+            249.4133
+          ],
+          [
+            523.3564,
+            249.4133
+          ],
+          [
+            523.3564,
+            239.4133
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "e027dd0c32efb42a117ebc199322a0b4",
+      "page_number": 1
+    },
+    "text": "8"
+  },
+  {
+    "type": "Title",
+    "element_id": "6ffcb3aedaafc6da2572b90013e010da",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            571.4126,
+            95.46590000000003
+          ],
+          [
+            571.4126,
+            107.46590000000003
+          ],
+          [
+            614.8765999999999,
+            107.46590000000003
+          ],
+          [
+            614.8765999999999,
+            95.46590000000003
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Vermont"
+  },
+  {
+    "type": "Title",
+    "element_id": "fe019a80f543ce1462d4ed0e3600f8eb",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            566.2651,
+            135.42590000000007
+          ],
+          [
+            566.2651,
+            164.798
+          ],
+          [
+            612.7651,
+            164.798
+          ],
+          [
+            612.7651,
+            135.42590000000007
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "29 New York"
+  },
+  {
+    "type": "Title",
+    "element_id": "2daa3a750d11360372d56950eb516d22",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            550.0435,
+            182.82920000000001
+          ],
+          [
+            550.0435,
+            202.00310000000002
+          ],
+          [
+            604.5535000000001,
+            202.00310000000002
+          ],
+          [
+            604.5535000000001,
+            182.82920000000001
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Pennsylvania 20"
+  },
+  {
+    "type": "Title",
+    "element_id": "a8287caf75c3024f6ad2ab7155bb01c9",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            562.2764,
+            215.66700000000003
+          ],
+          [
+            562.2764,
+            239.60850000000005
+          ],
+          [
+            596.9594,
+            239.60850000000005
+          ],
+          [
+            596.9594,
+            215.66700000000003
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "13 Virginia"
+  },
+  {
+    "type": "Title",
+    "element_id": "091b8ff15082912e48e19f5045147ff9",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            536.5474,
+            255.6105
+          ],
+          [
+            536.5474,
+            277.4132
+          ],
+          [
+            597.3864000000001,
+            277.4132
+          ],
+          [
+            597.3864000000001,
+            255.6105
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "North Carolina 15"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "46f789d1efeefad080846917a6a4a761",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            618.8198,
+            95.46590000000003
+          ],
+          [
+            618.8198,
+            107.46590000000003
+          ],
+          [
+            631.7918,
+            107.46590000000003
+          ],
+          [
+            631.7918,
+            95.46590000000003
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "091b8ff15082912e48e19f5045147ff9",
+      "page_number": 1
+    },
+    "text": "(3)"
+  },
+  {
+    "type": "Title",
+    "element_id": "feab20c6e5535855e9d1578fb09fc777",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            639.6616,
+            103.12120000000004
+          ],
+          [
+            639.6616,
+            124.93119999999999
+          ],
+          [
+            665.4816,
+            124.93119999999999
+          ],
+          [
+            665.4816,
+            103.12120000000004
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Maine 4"
+  },
+  {
+    "type": "Title",
+    "element_id": "e4d5c54329582e25cad140ece5384e2c",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            665.3335,
+            126.6812000000001
+          ],
+          [
+            665.3335,
+            136.38120000000004
+          ],
+          [
+            742.3515,
+            136.38120000000004
+          ],
+          [
+            742.3515,
+            126.6812000000001
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "New Hampshire (4)"
+  },
+  {
+    "type": "Title",
+    "element_id": "2d924dea9d34ebaa76510f9dd70ac204",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            668.6665,
+            142.5802
+          ],
+          [
+            668.6665,
+            154.5802
+          ],
+          [
+            763.2385,
+            154.5802
+          ],
+          [
+            763.2385,
+            142.5802
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Massachusetts (11)"
+  },
+  {
+    "type": "Title",
+    "element_id": "37ad23e08f9c64d883a76b936d223012",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            686.6665,
+            167.41520000000003
+          ],
+          [
+            686.6665,
+            178.41520000000003
+          ],
+          [
+            760.2895000000001,
+            178.41520000000003
+          ],
+          [
+            760.2895000000001,
+            167.41520000000003
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Rhode Island (4)"
+  },
+  {
+    "type": "Title",
+    "element_id": "71c2f57470c85e91398e0162dfca7727",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            637.4702,
+            185.07240000000002
+          ],
+          [
+            637.4702,
+            195.07240000000002
+          ],
+          [
+            701.2492,
+            195.07240000000002
+          ],
+          [
+            701.2492,
+            185.07240000000002
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Connecticut (7)"
+  },
+  {
+    "type": "Title",
+    "element_id": "905a056780c69eac0e94ac4ec56b205f",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            635.0591,
+            196.25990000000002
+          ],
+          [
+            635.0591,
+            235.12810000000002
+          ],
+          [
+            708.9619,
+            235.12810000000002
+          ],
+          [
+            708.9619,
+            196.25990000000002
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "New Jersey (14) Delaware (3) Maryland (10)"
+  },
+  {
+    "type": "Title",
+    "element_id": "7480172a41980013e2e59c1c0116022c",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            660.2339,
+            244.23060000000004
+          ],
+          [
+            660.2339,
+            266.23060000000004
+          ],
+          [
+            742.9639,
+            266.23060000000004
+          ],
+          [
+            742.9639,
+            244.23060000000004
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "District of Columbia (>55% Obama, 3)"
+  },
+  {
+    "type": "Title",
+    "element_id": "5886709c0968032c17ae028ba700c92a",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            618.8198,
+            268.6779
+          ],
+          [
+            618.8198,
+            295.0779
+          ],
+          [
+            672.1718,
+            295.0779
+          ],
+          [
+            672.1718,
+            268.6779
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "West Virginia (5)"
+  },
+  {
+    "type": "Title",
+    "element_id": "2f84b4da2045b16657c1300f162ba146",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            300.6712,
+            307.50320000000005
+          ],
+          [
+            300.6712,
+            339.50419999999997
+          ],
+          [
+            332.3812,
+            339.50419999999997
+          ],
+          [
+            332.3812,
+            307.50320000000005
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Texas 38"
+  },
+  {
+    "type": "Title",
+    "element_id": "2ff8b0b2ef25edf53eb066dfc965839f",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            403.5464,
+            333.7033
+          ],
+          [
+            403.5464,
+            355.67100000000005
+          ],
+          [
+            442.9564,
+            355.67100000000005
+          ],
+          [
+            442.9564,
+            333.7033
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Louisiana 8"
+  },
+  {
+    "type": "Title",
+    "element_id": "a1c8b1c58ef16360f8eb17a33e86fd99",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            469.5835,
+            305.838
+          ],
+          [
+            469.5835,
+            327.548
+          ],
+          [
+            506.5235,
+            327.548
+          ],
+          [
+            506.5235,
+            305.838
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Alabama 9"
+  },
+  {
+    "type": "Title",
+    "element_id": "8a799f373a70376d18a3a8426f6ac427",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            513.4771,
+            301.142
+          ],
+          [
+            513.4771,
+            328.05460000000005
+          ],
+          [
+            552.9450999999999,
+            328.05460000000005
+          ],
+          [
+            552.9450999999999,
+            301.142
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Georgia 16"
+  },
+  {
+    "type": "Title",
+    "element_id": "88c066d29f6b61739b7ba9da7d4cb649",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            445.7573,
+            364.4581
+          ],
+          [
+            445.7573,
+            376.4581
+          ],
+          [
+            514.9612999999999,
+            376.4581
+          ],
+          [
+            514.9612999999999,
+            364.4581
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Mississippi (6)"
+  },
+  {
+    "type": "Title",
+    "element_id": "561c02a6e94bb84c9bf5fc689eb07d4b",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            571.4116,
+            310.6788
+          ],
+          [
+            571.4116,
+            341.47880000000004
+          ],
+          [
+            619.4036000000001,
+            341.47880000000004
+          ],
+          [
+            619.4036000000001,
+            310.6788
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "South Carolina"
+  },
+  {
+    "type": "Title",
+    "element_id": "8e9e26c2ef86ecd02ba5c84da8a0859a",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            601.478,
+            352.1046
+          ],
+          [
+            601.478,
+            366.1046
+          ],
+          [
+            641.602,
+            366.1046
+          ],
+          [
+            641.602,
+            352.1046
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Florida"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "35135aaa6cc23891b40cb3f378c53a17",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            565.3530999999999,
+            370.3396
+          ],
+          [
+            565.3530999999999,
+            382.3396
+          ],
+          [
+            577.6650999999998,
+            382.3396
+          ],
+          [
+            577.6650999999998,
+            370.3396
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "8e9e26c2ef86ecd02ba5c84da8a0859a",
+      "page_number": 1
+    },
+    "text": "29"
+  },
+  {
+    "type": "Title",
+    "element_id": "c17ac113230f5f31c4a53f58d0f24e81",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            147.6338,
+            406.95520000000005
+          ],
+          [
+            147.6338,
+            418.45520000000005
+          ],
+          [
+            178.5918,
+            418.45520000000005
+          ],
+          [
+            178.5918,
+            406.95520000000005
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Alaska"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "4e07408562bedb8b60ce05c1decfe3ad",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            189.9985,
+            406.58020000000005
+          ],
+          [
+            189.9985,
+            418.58020000000005
+          ],
+          [
+            196.1545,
+            418.58020000000005
+          ],
+          [
+            196.1545,
+            406.58020000000005
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "c17ac113230f5f31c4a53f58d0f24e81",
+      "page_number": 1
+    },
+    "text": "3"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "5feceb66ffc86f38d952786c6d696c79",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            466.0962,
+            444.9371
+          ],
+          [
+            466.0962,
+            456.9371
+          ],
+          [
+            474.10020000000003,
+            456.9371
+          ],
+          [
+            474.10020000000003,
+            444.9371
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "c17ac113230f5f31c4a53f58d0f24e81",
+      "page_number": 1
+    },
+    "text": "0"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "66dbae68e4f498ba668b52b481891465",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            523.6729,
+            444.9371
+          ],
+          [
+            523.6729,
+            456.9371
+          ],
+          [
+            559.6849000000001,
+            456.9371
+          ],
+          [
+            559.6849000000001,
+            444.9371
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "c17ac113230f5f31c4a53f58d0f24e81",
+      "page_number": 1
+    },
+    "text": "1,000"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "eaba2fc8b501189b8e9abfa2e0feab57",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            595.2529,
+            444.9371
+          ],
+          [
+            595.2529,
+            456.9371
+          ],
+          [
+            631.2649,
+            456.9371
+          ],
+          [
+            631.2649,
+            444.9371
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "c17ac113230f5f31c4a53f58d0f24e81",
+      "page_number": 1
+    },
+    "text": "2,000"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "5161dfd1e2d5f4fb0622f9877fc65108",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            666.8335,
+            444.9371
+          ],
+          [
+            666.8335,
+            456.9371
+          ],
+          [
+            702.8455,
+            456.9371
+          ],
+          [
+            702.8455,
+            444.9371
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "c17ac113230f5f31c4a53f58d0f24e81",
+      "page_number": 1
+    },
+    "text": "3,000"
+  },
+  {
+    "type": "Title",
+    "element_id": "e54af8206cef3af3dc891e6f803028d0",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            738.4136,
+            444.9371
+          ],
+          [
+            738.4136,
+            456.9371
+          ],
+          [
+            850.7108,
+            456.9371
+          ],
+          [
+            850.7108,
+            444.9371
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "4,000 Kilometers"
+  },
+  {
+    "type": "Title",
+    "element_id": "7482e374b5bddc0a48ea3b3430de633b",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            586.1724,
+            483.50010000000003
+          ],
+          [
+            586.1724,
+            501.50010000000003
+          ],
+          [
+            642.6564000000001,
+            501.50010000000003
+          ],
+          [
+            642.6564000000001,
+            483.50010000000003
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Legend"
+  },
+  {
+    "type": "Title",
+    "element_id": "89f974b57479c81912260cd49d29a25d",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            66.6392,
+            547.1827000000001
+          ],
+          [
+            66.6392,
+            561.1827000000001
+          ],
+          [
+            124.0532,
+            561.1827000000001
+          ],
+          [
+            124.0532,
+            547.1827000000001
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Hawaii (4)"
+  },
+  {
+    "type": "Title",
+    "element_id": "dadbe20695932c1ae623ab6577c36820",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            271.5908,
+            508.46400000000006
+          ],
+          [
+            271.5908,
+            522.964
+          ],
+          [
+            395.6963,
+            522.964
+          ],
+          [
+            395.6963,
+            508.46400000000006
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "By Ernesto Barahona"
+  },
+  {
+    "type": "Title",
+    "element_id": "b040eeb5d66cf0adf1a4b201b66fd71e",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            271.5908,
+            543.264
+          ],
+          [
+            271.5908,
+            557.764
+          ],
+          [
+            443.66229999999996,
+            557.764
+          ],
+          [
+            443.66229999999996,
+            543.264
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Compiled November 8, 2012"
+  },
+  {
+    "type": "Title",
+    "element_id": "e2c0b41db7a153dddd4c0d497a7c0f57",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            271.5908,
+            578.064
+          ],
+          [
+            271.5908,
+            592.564
+          ],
+          [
+            525.7772500000001,
+            592.564
+          ],
+          [
+            525.7772500000001,
+            578.064
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "United States Albers Equal Area Projection"
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "45169122ff574e8dd1bc904f3f31571a",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            586.1724,
+            520.5245
+          ],
+          [
+            586.1724,
+            587.2245
+          ],
+          [
+            735.8994000000001,
+            587.2245
+          ],
+          [
+            735.8994000000001,
+            520.5245
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "parent_id": "e2c0b41db7a153dddd4c0d497a7c0f57",
+      "page_number": 1
+    },
+    "text": "55% or More for Obama 50-55% for Obama 50-55% for Romney 55% or More for Romney"
+  },
+  {
+    "type": "Title",
+    "element_id": "847f8628c0291dd37be6ffb829916c24",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            271.5908,
+            612.864
+          ],
+          [
+            271.5908,
+            627.364
+          ],
+          [
+            346.6138,
+            627.364
+          ],
+          [
+            346.6138,
+            612.864
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Source: CNN"
+  },
+  {
+    "type": "Title",
+    "element_id": "4f7f17d9ff603990618ec8e536e3978f",
+    "metadata": {
+      "coordinates": {
+        "points": [
+          [
+            595.1372,
+            604.5001
+          ],
+          [
+            595.1372,
+            635.3001
+          ],
+          [
+            755.8166,
+            635.3001
+          ],
+          [
+            755.8166,
+            604.5001
+          ]
+        ],
+        "system": "PixelSpace",
+        "layout_width": 883.333,
+        "layout_height": 690.672
+      },
+      "data_source": {
+        "date_processed": "2023-11-30T09:10:41.906777"
+      },
+      "filename": "2012_U.S._Presidential_Election_Results_by_State.pdf",
+      "file_directory": "us_election",
+      "last_modified": "2023-11-30T18:06:59",
+      "filetype": "application/pdf",
+      "page_number": 1
+    },
+    "text": "Number for each state = number of electoral votes"
+  }
+]
