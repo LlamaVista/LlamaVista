@@ -10,3 +10,8 @@ class User(BaseModel):
     _id: Annotated[ObjectId, ObjectIdPydanticAnnotation] = None
     name: str = ''
     google_email: str = ''
+
+
+class UserResponse(BaseModel):
+    access_token: str
+    refresh_token: str

@@ -1,18 +1,15 @@
 import io
-import os
 import time
 
 import matplotlib.pyplot as plt
 from PIL import Image
 from openai import OpenAI
-from dotenv import load_dotenv
-
-load_dotenv('../settings/.env')
+from settings import settings
 
 
 class OpenAIManager:
     def __init__(self):
-        self.client = OpenAI(api_key=os.getenv('OPEN_API_KEY'))
+        self.client = OpenAI(api_key=settings.OPEN_API_KEY)
 
     def submit_message(self, assistant_id, thread, user_message):
         self.client.beta.threads.messages.create(
@@ -78,7 +75,7 @@ class OpenAIManager:
 
 if __name__ == "__main__":
     manager = OpenAIManager()
-    assistant_id = os.getenv('ASSISTANT_ID')
+    assistant_id = settings.ASSISTANT_ID
     assistant = manager.client.beta.assistants.retrieve(assistant_id)
     prompt = "데이터를 시각화해줘"
     thread, run = manager.create_thread_and_run(assistant, prompt)
