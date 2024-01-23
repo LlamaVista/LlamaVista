@@ -19,7 +19,10 @@ class ObjectIdPydanticAnnotation:
 
     @classmethod
     def __get_pydantic_core_schema__(cls, source_type, _handler) -> core_schema.CoreSchema:
-        assert source_type is ObjectId
+        # isinstance 검사로 변경
+        if not isinstance(source_type, type(ObjectId)):
+            raise TypeError("source_type must be an instance of type ObjectId")
+
         return core_schema.no_info_wrap_validator_function(
             cls.validate_object_id,
             core_schema.str_schema(),

@@ -1,17 +1,19 @@
-from typing import Annotated
+from typing import Annotated, Optional
 
 from bson import ObjectId
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr, Field
 
 from database.models.object import ObjectIdPydanticAnnotation
 
 
 class User(BaseModel):
-    _id: Annotated[ObjectId, ObjectIdPydanticAnnotation] = None
-    name: str = ''
-    google_email: str = ''
+    id: Optional[ObjectIdPydanticAnnotation] = Field(default_factory=ObjectId, alias='_id')
+    name: Optional[str]
+    email: Optional[EmailStr]
+    hashed_password: Optional[str]
+    google_email: Optional[EmailStr] = None
 
-
-class UserResponse(BaseModel):
-    access_token: str
-    refresh_token: str
+    class Config:
+        populate_by_name = True
+        json_encoders = {ObjectId: lambda oid: str(oid)}
+        from_attributes = True

@@ -1,2 +1,2 @@
 from .object import ObjectIdPydanticAnnotation
-from .user import User, UserResponse
+from .user import User

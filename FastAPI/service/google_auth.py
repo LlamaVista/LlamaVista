@@ -1,12 +1,13 @@
 import requests
 from fastapi import APIRouter
-from fastapi import HTTPException, status, Response, Request
+from fastapi import HTTPException, status
 from fastapi.responses import RedirectResponse
+from authlib.integrations.starlette_client import OAuth
 
 from settings import settings
 
-
 router = APIRouter()
+oauth = OAuth()
 
 
 @router.get("/google-login")
@@ -20,6 +21,7 @@ async def google_login():
         f"&redirect_uri={settings.REDIRECT_URI}"
         "&scope=openid%20email%20profile"
     )
+
     return RedirectResponse(url)
 
 
