@@ -5,6 +5,16 @@ from fastapi.responses import RedirectResponse
 
 from settings import settings
 
+from pydantic import BaseModel
+
+
+class TokenRequest(BaseModel):
+    code: str
+
+
+class UserInfoRequest(BaseModel):
+    access_token: str
+
 
 router = APIRouter()
 
@@ -23,8 +33,8 @@ async def google_login():
     return RedirectResponse(url)
 
 
-@router.get("/callback")
-async def callback(code: str):
+@router.post("/callback")
+async def callback(code: TokenRequest):
     token_data = {
         "code": code,
         "client_id": settings.GOOGLE_CLIENT_ID,
@@ -47,3 +57,13 @@ async def callback(code: str):
     refresh_token = token_response.get("refresh_token")
 
     return {"access_token": access_token, "refresh_token": refresh_token}
+
+
+@router.post("/userinfo")
+async def userinfo(access_token: UserInfoRequest):
+    profile_response = requests.get(
+        "https://www.googleapis.com/oauth2/v3/userinfo",
+        headers={"Authorization": f"Bearer {access_token}"},
+    )
+    profile_data = profile_response.json()
+    return profile_data
