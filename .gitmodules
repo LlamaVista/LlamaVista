@@ -1,6 +1,0 @@
-[submodule "LlamaVista/FastAPI/settings/"]
-	path = LlamaVista/FastAPI/settings/
-	url = https://github.com/LlamaVista/flask_env.git
-[submodule "FastAPI/env"]
-	path = FastAPI/env
-	url = https://github.com/LlamaVista/flask_env.git
