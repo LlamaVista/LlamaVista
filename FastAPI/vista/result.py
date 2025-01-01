@@ -10,23 +10,25 @@ router = APIRouter()
 client = OpenAI(api_key=settings.OPEN_API_KEY)
 
 
-@router.get('/chat_list')
+@router.get('/chat-list')
 async def chat_list(user=Depends(get_current_user)):
     threads = user['threads']
     return threads
 
 
-@router.get('/user_file')
-async def user_file(thread_id: str, user=Depends(get_current_user)):
-    file_name = next((thread['file_name'] for thread in user['threads'] if thread['thread_id'] == thread_id), None)
-    return file_name
+# TODO
+# 필요시 user file logic 추가
+# @router.get('/user_file')
+# async def user_file(thread_id: str, user=Depends(get_current_user)):
+#     file_name = next((thread['file_name'] for thread in user['threads'] if thread['thread_id'] == thread_id), None)
+#     return file_name
 
 
-@router.get('/file_list')
-async def file_list(thread_id: str):
+@router.get('/file-store')
+async def file_store(thread_id: str):
     thread_messages = client.beta.threads.messages.list(thread_id)
     file_ids = []
-    for message in thread_messages:
+    for message in thread_messages.data:
         if message.role == 'user':
             break
         for content in message.content:
@@ -40,23 +42,23 @@ async def file_list(thread_id: str):
     return file_ids
 
 
-@router.get('/store')
-async def store(thread_id: str, user=Depends(get_current_user)):
+@router.get('/db-store')
+async def db_store(thread_id: str, user=Depends(get_current_user)):
     thread_messages = client.beta.threads.messages.list(thread_id)
     messages = []
 
     # JSON 데이터 파싱
-    for message in thread_messages:
+    for message in thread_messages.data:
         new_message = {
             "role": message.role,
             "text": None,
             "file_id": []
         }
 
-        # user file
-        user_files = message.file_ids
-        if user_files:
-            new_message['file_id'].extend(user_files)
+        # TODO
+        # user_files = message.file_ids
+        # if user_files:
+        #     new_message['file_id'].extend(user_files)
 
         # output
         for content in message.content:
