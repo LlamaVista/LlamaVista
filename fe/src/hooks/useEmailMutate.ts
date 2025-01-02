@@ -12,7 +12,6 @@ export const useEmailMutate = () => {
 
   const { mutate } = useMutation(getEmailLoginToken, {
     onSuccess: (tokenData) => {
-      // console.log(tokenData);
       tokenData.domain = 'Standard';
 
       const { access_token, domain } = tokenData;
@@ -29,8 +28,13 @@ export const useEmailMutate = () => {
 
       emailLoginUserInfo({ access_token, domain });
     },
-    onError: (error) => {
-      // console.log(error);
+    onError: (error: any) => {
+      if (error.response && error.response.status === 401) {
+        alert('잘못된 이메일 혹은 비밀번호');
+        window.location.reload();
+      } else {
+        console.log(error);
+      }
     },
   });
 

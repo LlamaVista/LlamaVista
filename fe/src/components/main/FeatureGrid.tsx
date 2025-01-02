@@ -102,7 +102,7 @@ function FeatureGrid() {
               <span>Data Summarization</span>
             </FeatureTitle>
             <FeatureDiscription>
-              Datasets can be massive. LIDA summarizes data into a compact but
+              Datasets can be massive. VISTA summarizes data into a compact but
               information dense natural language representation used as
               grounding context for all subsequent operations.
             </FeatureDiscription>
@@ -112,7 +112,7 @@ function FeatureGrid() {
               <span>Automated Data Exploration</span>
             </FeatureTitle>
             <FeatureDiscription>
-              Unfamiliar with a dataset? LIDA provides a fully automated mode
+              Unfamiliar with a dataset? VISTA provides a fully automated mode
               that generates meaningful visualization goals based on the
               dataset. EDA for free.
             </FeatureDiscription>
@@ -123,8 +123,8 @@ function FeatureGrid() {
             </FeatureTitle>
             <FeatureDiscription>
               Want visualizations created in python in Altair, Matplotlib,
-              Seaborn etc? How about R, C++ ? LIDA is grammar agnostic i.e., can
-              generate visualizations in any grammar represented as code.
+              Seaborn etc? How about R, C++ ? VISTA is grammar agnostic i.e.,
+              can generate visualizations in any grammar represented as code.
             </FeatureDiscription>
           </GridContent>
         </GridColumn>
@@ -158,7 +158,7 @@ function FeatureGrid() {
             </FeatureTitle>
             <FeatureDiscription>
               LLMs like GPT-3.5 and GPT-4 encode visualization best practices.
-              LIDA applies these capabilities in generating multi-dimensional
+              VISTA applies these capabilities in generating multi-dimensional
               evaluation scores for visualizations represented as code.
             </FeatureDiscription>
           </GridContent>
@@ -172,7 +172,7 @@ function FeatureGrid() {
               <span>Visualization Repair</span>
             </FeatureTitle>
             <FeatureDiscription>
-              LIDA provides methods to automatically improve visualizations via
+              VISTA provides methods to automatically improve visualizations via
               self-evaluation feedback or repair visualizations based on user
               provided or compile feedback.
             </FeatureDiscription>
@@ -182,7 +182,7 @@ function FeatureGrid() {
               <span>Visualization Recommendations</span>
             </FeatureTitle>
             <FeatureDiscription>
-              Given some context goals, or an existing visualization, LIDA can
+              Given some context goals, or an existing visualization, VISTA can
               recommend additional visualizations that may be useful to the user
               e.g, for comparison, or to provide additional perspectives.
             </FeatureDiscription>
@@ -210,7 +210,7 @@ function FeatureGrid() {
               <span>Data Summarization</span>
             </FeatureTitle>
             <FeatureDiscription>
-              Datasets can be massive. LIDA summarizes data into a compact but
+              Datasets can be massive. VISTA summarizes data into a compact but
               information dense natural language representation used as
               grounding context for all subsequent operations.
             </FeatureDiscription>
@@ -233,7 +233,7 @@ function FeatureGrid() {
               <span>Automated Data Exploration</span>
             </FeatureTitle>
             <FeatureDiscription>
-              Unfamiliar with a dataset? LIDA provides a fully automated mode
+              Unfamiliar with a dataset? VISTA provides a fully automated mode
               that generates meaningful visualization goals based on the
               dataset. EDA for free.
             </FeatureDiscription>
@@ -244,8 +244,8 @@ function FeatureGrid() {
             </FeatureTitle>
             <FeatureDiscription>
               Want visualizations created in python in Altair, Matplotlib,
-              Seaborn etc? How about R, C++ ? LIDA is grammar agnostic i.e., can
-              generate visualizations in any grammar represented as code.
+              Seaborn etc? How about R, C++ ? VISTA is grammar agnostic i.e.,
+              can generate visualizations in any grammar represented as code.
             </FeatureDiscription>
           </GridContent>
         </GridColumn>
@@ -258,7 +258,7 @@ function FeatureGrid() {
               <span>Visualization Repair</span>
             </FeatureTitle>
             <FeatureDiscription>
-              LIDA provides methods to automatically improve visualizations via
+              VISTA provides methods to automatically improve visualizations via
               self-evaluation feedback or repair visualizations based on user
               provided or compile feedback.
             </FeatureDiscription>
@@ -268,7 +268,7 @@ function FeatureGrid() {
               <span>Visualization Recommendations</span>
             </FeatureTitle>
             <FeatureDiscription>
-              Given some context goals, or an existing visualization, LIDA can
+              Given some context goals, or an existing visualization, VISTA can
               recommend additional visualizations that may be useful to the user
               e.g, for comparison, or to provide additional perspectives.
             </FeatureDiscription>
@@ -289,7 +289,7 @@ function FeatureGrid() {
             </FeatureTitle>
             <FeatureDiscription>
               LLMs like GPT-3.5 and GPT-4 encode visualization best practices.
-              LIDA applies these capabilities in generating multi-dimensional
+              VISTA applies these capabilities in generating multi-dimensional
               evaluation scores for visualizations represented as code.
             </FeatureDiscription>
           </GridContent>
@@ -316,7 +316,7 @@ function FeatureGrid() {
               <span>Data Summarization</span>
             </FeatureTitle>
             <FeatureDiscription>
-              Datasets can be massive. LIDA summarizes data into a compact but
+              Datasets can be massive. VISTA summarizes data into a compact but
               information dense natural language representation used as
               grounding context for all subsequent operations.
             </FeatureDiscription>
@@ -342,7 +342,7 @@ function FeatureGrid() {
               <span>Visualization Repair</span>
             </FeatureTitle>
             <FeatureDiscription>
-              LIDA provides methods to automatically improve visualizations via
+              VISTA provides methods to automatically improve visualizations via
               self-evaluation feedback or repair visualizations based on user
               provided or compile feedback.
             </FeatureDiscription>
@@ -352,7 +352,7 @@ function FeatureGrid() {
               <span>Automated Data Exploration</span>
             </FeatureTitle>
             <FeatureDiscription className="mobile">
-              Unfamiliar with a dataset? LIDA provides a fully automated mode
+              Unfamiliar with a dataset? VISTA provides a fully automated mode
               that generates meaningful visualization goals based on the
               dataset. EDA for free.
             </FeatureDiscription>
@@ -363,8 +363,8 @@ function FeatureGrid() {
             </FeatureTitle>
             <FeatureDiscription className="mobile">
               Want visualizations created in python in Altair, Matplotlib,
-              Seaborn etc? How about R, C++ ? LIDA is grammar agnostic i.e., can
-              generate visualizations in any grammar represented as code.
+              Seaborn etc? How about R, C++ ? VISTA is grammar agnostic i.e.,
+              can generate visualizations in any grammar represented as code.
             </FeatureDiscription>
           </GridContent>
 
@@ -384,7 +384,7 @@ function FeatureGrid() {
             </FeatureTitle>
             <FeatureDiscription className="mobile">
               LLMs like GPT-3.5 and GPT-4 encode visualization best practices.
-              LIDA applies these capabilities in generating multi-dimensional
+              VISTA applies these capabilities in generating multi-dimensional
               evaluation scores for visualizations represented as code.
             </FeatureDiscription>
           </GridContent>
@@ -394,7 +394,7 @@ function FeatureGrid() {
               <span>Visualization Recommendations</span>
             </FeatureTitle>
             <FeatureDiscription className="mobile">
-              Given some context goals, or an existing visualization, LIDA can
+              Given some context goals, or an existing visualization, VISTA can
               recommend additional visualizations that may be useful to the user
               e.g, for comparison, or to provide additional perspectives.
             </FeatureDiscription>

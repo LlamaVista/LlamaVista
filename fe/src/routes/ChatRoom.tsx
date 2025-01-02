@@ -128,7 +128,6 @@ function ChatRoom() {
 
   const { mutate: getChatContentMutate, isLoading: isChatContentLoading } =
     useMutation(getChatContenet, {
-      // onError: (e) => console.log(e),
       onSuccess: (chatContent) => {
         chatContent.reverse();
         chatContent[0].text = null;

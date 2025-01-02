@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { useAuth } from '../../hooks/auth';
 import SideBarToggleBtn from '../navbar/SideBarToggleBtn';
+import { useHistory } from 'react-router-dom';
+import { TokenKey } from '../../interface/auth/interface.auth';
 
 const ToggleBtnWapper = styled.div`
   position: sticky;
@@ -106,9 +108,15 @@ const GithubBtn = styled.a`
 
 function Intro() {
   const auth = useAuth('/demo');
+  const history = useHistory();
 
   const onStartBtnClick = () => {
-    auth();
+    if (localStorage.getItem(TokenKey.accessToken) == undefined) {
+      alert('로그인 이후 이용 가능합니다');
+      history.push('/login');
+    } else {
+      auth();
+    }
   };
 
   return (
@@ -134,7 +142,7 @@ function Intro() {
             <StartBtnLink onClick={onStartBtnClick}>
               <span>Get Started</span>
             </StartBtnLink>
-            <GithubBtn href="https://github.com/LlamaVista/LlamaVista">
+            <GithubBtn href="https://github.com/seo-seoungjun/VISTA-FE">
               <span>Go Github</span>
             </GithubBtn>
           </StartBtnWapper>

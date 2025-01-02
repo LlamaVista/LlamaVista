@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import LoginForm from '../components/form/auth_form/LoginForm';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../hooks/auth';
 
 const LoginSection = styled.section`
@@ -81,8 +81,12 @@ const MoreBtn = styled.button`
 
 function Login() {
   const auth = useAuth('/demo');
+  const { state } = useLocation<{ isReLoad: boolean } | undefined>();
 
   useEffect(() => {
+    if (state?.isReLoad) {
+      window.location.reload();
+    }
     auth();
   }, []);
   return (

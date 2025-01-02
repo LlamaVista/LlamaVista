@@ -10,6 +10,8 @@ import Loading from '../../loading/Loading';
 import { createChat, sendSampleData } from '../../../APIs/chat/api.chat';
 import SideBarToggleBtn from '../../navbar/SideBarToggleBtn';
 
+const DNS = process.env.REACT_APP_DNS;
+
 const LoadingWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -180,7 +182,7 @@ function CreateChat() {
                   id="file"
                 />
                 <FileUploadLabel htmlFor="file">
-                  <FileUploadIcon src="http://localhost:3000/Images/fileUpload.svg" />
+                  <FileUploadIcon src={`${DNS}:3000/Images/fileUpload.svg`} />
                   {fileName ? (
                     <p>{fileName}</p>
                   ) : (
@@ -191,14 +193,18 @@ function CreateChat() {
                   )}
                 </FileUploadLabel>
                 <SampleDataWrapper>
-                  <SampleData onClick={() => onSampleDataClick('cars.csv')}>
-                    <p>cars.csv</p>
+                  <SampleData onClick={() => onSampleDataClick('iris.csv')}>
+                    <p>iris.csv</p>
                   </SampleData>
-                  <SampleData onClick={() => onSampleDataClick('housing.csv')}>
-                    <p>housing.csv</p>
+                  <SampleData
+                    onClick={() => onSampleDataClick('london_houses.csv')}
+                  >
+                    <p>london_houses.csv</p>
                   </SampleData>
-                  <SampleData onClick={() => onSampleDataClick('Iris.csv')}>
-                    <p>Iris.csv</p>
+                  <SampleData
+                    onClick={() => onSampleDataClick('shopping_trends.csv')}
+                  >
+                    <p>shopping_trends.csv</p>
                   </SampleData>
                 </SampleDataWrapper>
               </FileUploadWrapper>

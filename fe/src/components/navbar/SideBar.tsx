@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
 import styled from 'styled-components';
@@ -14,6 +14,7 @@ import { darkTheme } from '../../styles/theme';
 import { chatList } from '../../atoms/chat/atom.chat';
 import { useMutation } from 'react-query';
 import { getChatList } from '../../APIs/chat/api.chat';
+import { TokenKey } from '../../interface/auth/interface.auth';
 
 const Header = styled.header`
   box-shadow: rgba(255, 255, 255, 0.18) 1px 0px 0px 0px;
@@ -291,10 +292,16 @@ function SideBar() {
   };
 
   const auth = useAuth('/demo');
+  const history = useHistory();
 
   const onDemoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    auth();
+    if (localStorage.getItem(TokenKey.accessToken) == undefined) {
+      alert('로그인 이후 이용 가능합니다');
+      history.push('/login');
+    } else {
+      auth();
+    }
   };
 
   const linkRef = useHighLight(
@@ -337,7 +344,7 @@ function SideBar() {
                     onClick={(e) => onDemoClick(e)}
                     to={'/demo'}
                   >
-                    Demo
+                    Create Chat
                   </DemoLink>
                 </MenuWrapper>
               </DemoMenu>

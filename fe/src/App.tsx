@@ -56,6 +56,7 @@ a {
 `;
 
 function App() {
+  console.warn = () => {};
   return (
     <>
       <GlobalStyle />

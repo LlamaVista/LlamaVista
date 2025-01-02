@@ -10,6 +10,8 @@ import { useEmailMutate } from '../../../hooks/useEmailMutate';
 import { useGoogleMutate } from '../../../hooks/useGoogleMutate';
 require('dotenv').config();
 
+const DNS = process.env.REACT_APP_DNS;
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -116,21 +118,27 @@ function LoginForm() {
     emailLoginMutate(data);
   };
 
-  const googleLoginMutate = useGoogleMutate();
+  const handleGoogleLogin = () => {
+    alert(
+      'DNS 서비스 기간이 종료되어 현재 구글 로그인 기능을 이용할 수 없습니다. 양해 부탁드립니다'
+    );
+  };
 
-  const handleGoogleLogin = useGoogleLogin({
-    onSuccess: async ({ code }) => {
-      // await axios
-      //   .get('http://techvista24.com:8000/callback', { params: { code } })
-      //   .then(({ data }) => {
-      //     console.log(data);
-      //   });
-      googleLoginMutate(code);
-    },
+  // const googleLoginMutate = useGoogleMutate();
 
-    // onError: (res) => console.log(res),
-    flow: 'auth-code',
-  });
+  // const handleGoogleLogin = useGoogleLogin({
+  //   onSuccess: async ({ code }) => {
+  //     // await axios
+  //     //   .get('http://techvista24.com:8000/callback', { params: { code } })
+  //     //   .then(({ data }) => {
+  //     //     console.log(data);
+  //     //   });
+  //     googleLoginMutate(code);
+  //   },
+
+  //   // onError: (res) => console.log(res),
+  //   flow: 'auth-code',
+  // });
 
   const handleGithubLogin = () => {
     // 깃허브 로그인 로직을 작성하세요.
@@ -176,10 +184,10 @@ function LoginForm() {
       )}
       <SocialLoginBtnWrapper>
         <SocialLoginBtn onClick={() => handleGoogleLogin()}>
-          <GoogleIcon src="http://localhost:3000/Images/google.svg" />
+          <GoogleIcon src={`${DNS}:3000/Images/google.svg`} />
           <p>sign in with google</p>
         </SocialLoginBtn>
-        <SocialLoginBtn
+        {/* <SocialLoginBtn
           onMouseEnter={onGithubIconEnter}
           onMouseLeave={onGithubIconLeave}
           onClick={handleGithubLogin}
@@ -189,7 +197,7 @@ function LoginForm() {
             src="http://localhost:3000/Images/github.svg"
           />
           <p>sign in with github</p>
-        </SocialLoginBtn>
+        </SocialLoginBtn> */}
       </SocialLoginBtnWrapper>
     </Container>
   );
