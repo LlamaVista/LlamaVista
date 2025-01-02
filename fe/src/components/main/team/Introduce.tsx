@@ -3,6 +3,8 @@ import { motion } from 'framer-motion/dist/framer-motion';
 import styled from 'styled-components';
 import { Iintroduce } from '../../../atoms/main/atom.team';
 
+const DNS = process.env.REACT_APP_DNS;
+
 const Profile = styled.div`
   display: 'flex';
   flex-direction: 'column';
@@ -18,7 +20,7 @@ const ImgWrapper = styled.div`
 `;
 
 const ProfileImg = styled.img`
-  width: 80%;
+  width: 70%;
   padding: 10px;
   pointer-events: none;
 `;
@@ -45,6 +47,8 @@ const SelfIntroduce = styled.div`
   flex-basis: 330px;
   position: relative;
   background-color: black;
+  display: flex;
+  align-items: center;
   transition: top 1s, opacity 1s;
   &.on-hover {
     top: -100%;
@@ -89,7 +93,7 @@ function Introduce({ name, roll, say, url }: Iintroduce) {
       >
         <Profile className="ctx">
           <ImgWrapper>
-            <ProfileImg src={`http://localhost:3000/Images/${url}`} />
+            <ProfileImg src={`${DNS}:3000/Images/${url}`} />
           </ImgWrapper>
           <NameAndRoll>
             <Name>{name}</Name>
