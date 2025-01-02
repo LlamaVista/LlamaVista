@@ -7,7 +7,6 @@ import {
   IThreadId,
   MessageProps,
 } from '../../interface/chat/interface.chating';
-import { QueryFunctionContext } from 'react-query';
 
 require('dotenv').config();
 
@@ -24,7 +23,7 @@ const getTokenData = () => {
 export const createChat = async (data: PostFormDataBody) => {
   const tokenData = getTokenData();
 
-  const res = await axios.post(`${DNS}:${SPRING_PORT}/create`, data, {
+  const res = await axios.post(`${DNS}:${SPRING_PORT}/create-chat`, data, {
     headers: {
       'Content-Type': 'multipart/form-data',
       Authorization: `Bearer ${tokenData.access_token}`,
@@ -48,7 +47,7 @@ export const sendChat = async (data: ISendApiProps) => {
 
   try {
     data.setStreamingLoading(true);
-    const response = await fetch(`${DNS}:${SPRING_PORT}/chat`, {
+    const response = await fetch(`${DNS}:${SPRING_PORT}/continue-chat`, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${tokenData.access_token}`,
@@ -110,7 +109,7 @@ export const sendChat = async (data: ISendApiProps) => {
 export const getChatList = async () => {
   const tokenData = getTokenData();
 
-  const res = await axios.get<IThreadId[]>(`${DNS}:${SPRING_PORT}/chat_list`, {
+  const res = await axios.get<IThreadId[]>(`${DNS}:${SPRING_PORT}/chat-list`, {
     headers: {
       Authorization: `Bearer ${tokenData.access_token}`,
       token_type: tokenData.domain,
@@ -123,15 +122,18 @@ export const getChatList = async () => {
 export const getChatContenet = async (threadId: string) => {
   const tokenData = getTokenData();
 
-  const res = await axios.get<MessageProps[]>(`${DNS}:${SPRING_PORT}/store`, {
-    headers: {
-      Authorization: `Bearer ${tokenData.access_token}`,
-      token_type: tokenData.domain,
-    },
-    params: {
-      thread_id: threadId,
-    },
-  });
+  const res = await axios.get<MessageProps[]>(
+    `${DNS}:${SPRING_PORT}/db-store`,
+    {
+      headers: {
+        Authorization: `Bearer ${tokenData.access_token}`,
+        token_type: tokenData.domain,
+      },
+      params: {
+        thread_id: threadId,
+      },
+    }
+  );
 
   return res.data;
 };
@@ -157,11 +159,10 @@ export const sendSampleData = async (fileName: string) => {
 
   const formData = new FormData();
 
-  formData.append('name', fileName);
-  formData.append('file_name', fileName);
+  formData.append('csv_name', fileName);
 
   const res = await axios.post(
-    `${DNS}:${SPRING_PORT}/create_example`,
+    `${DNS}:${SPRING_PORT}/create-chat-example`,
     formData,
     {
       headers: {
@@ -177,7 +178,7 @@ export const sendSampleData = async (fileName: string) => {
 export const getAssistantFileList = async (threadId: string) => {
   const tokenData = getTokenData();
 
-  const res = await axios.get<string[]>(`${DNS}:${SPRING_PORT}/file_list`, {
+  const res = await axios.get<string[]>(`${DNS}:${SPRING_PORT}/file-store`, {
     headers: {
       Authorization: `Bearer ${tokenData.access_token}`,
       token_type: tokenData.domain,
