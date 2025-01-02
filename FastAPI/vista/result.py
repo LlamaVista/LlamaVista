@@ -5,7 +5,6 @@ from database import MongoClient
 from settings import settings
 from service.fastapi_auth import get_current_user
 
-
 router = APIRouter()
 client = OpenAI(api_key=settings.OPEN_API_KEY)
 
@@ -16,8 +15,7 @@ async def chat_list(user=Depends(get_current_user)):
     return threads
 
 
-# TODO
-# 필요시 user file logic 추가
+# TODO user file name 불러오는 logic
 # @router.get('/user_file')
 # async def user_file(thread_id: str, user=Depends(get_current_user)):
 #     file_name = next((thread['file_name'] for thread in user['threads'] if thread['thread_id'] == thread_id), None)
@@ -52,13 +50,11 @@ async def db_store(thread_id: str, user=Depends(get_current_user)):
         new_message = {
             "role": message.role,
             "text": None,
-            "file_id": []
+            "file_id": [],
         }
 
-        # TODO
-        # user_files = message.file_ids
-        # if user_files:
-        #     new_message['file_id'].extend(user_files)
+        for user_file_object in message.attachments:
+            new_message['file_id'].extend(user_file_object.file_id)
 
         # output
         for content in message.content:
@@ -79,4 +75,3 @@ async def db_store(thread_id: str, user=Depends(get_current_user)):
         return messages
     else:
         return f"Failed to add message to thread {thread_id} for user {user['email']}."
-

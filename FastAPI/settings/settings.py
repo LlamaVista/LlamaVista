@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     REDIRECT_URI: str = "http://127.0.0.1:8000/auth/google"
     MONGO_DB_URI: str = os.getenv("MONGO_DB_URI")
     OPEN_API_KEY: str = os.getenv("OPEN_API_KEY")
+    EXAMPLE_ASSISTANT_ID: str = os.getenv("EXAMPLE_ASSISTANT_ID")
     ASSISTANT_ID: str = os.getenv("ASSISTANT_ID")
     DATASET_INFO: dict = {"life": """This dataset provides aggregated life expectancy data averaged over multiple years 
     for various countries, along with associated socio-economic and health-related factors. It aims to facilitate 
