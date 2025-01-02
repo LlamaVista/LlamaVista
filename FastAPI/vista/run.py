@@ -16,7 +16,7 @@ async def test_gpt():
     client.beta.threads.messages.create(
         thread_id=empty_thread.id,
         role="user",
-        content="",
+        content="hi!",
         attachments=[]
     )
 

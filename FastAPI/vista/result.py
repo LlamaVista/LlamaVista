@@ -16,10 +16,10 @@ async def chat_list(user=Depends(get_current_user)):
 
 
 # TODO user file name 불러오는 logic
-# @router.get('/user_file')
-# async def user_file(thread_id: str, user=Depends(get_current_user)):
-#     file_name = next((thread['file_name'] for thread in user['threads'] if thread['thread_id'] == thread_id), None)
-#     return file_name
+@router.get('/user_file')
+async def user_file(thread_id: str, user=Depends(get_current_user)):
+    file_name = next((thread['file_name'] for thread in user['threads'] if thread['thread_id'] == thread_id), None)
+    return file_name
 
 
 @router.get('/file-store')
@@ -54,7 +54,7 @@ async def db_store(thread_id: str, user=Depends(get_current_user)):
         }
 
         for user_file_object in message.attachments:
-            new_message['file_id'].extend(user_file_object.file_id)
+            new_message['file_id'].append(user_file_object.file_id)
 
         # output
         for content in message.content:
