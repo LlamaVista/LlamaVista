@@ -24,14 +24,18 @@ export const useHighLight = (
       highLightElement.style.color = highLightColor;
     };
 
-    if (isMount) {
+    if (isMount || currentUrl == '/home') {
       linkRef?.current.forEach((element) => {
         element = element as HTMLAnchorElement;
+
+        console.log(element);
 
         const fullUrl = element.href;
         const linkElementPathName = fullUrl.substring(
           fullUrl.lastIndexOf('3000') + 4
         );
+
+        console.log(currentUrl, linkElementPathName);
 
         if (linkElementPathName === currentUrl) {
           highLightElement = element;

@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import Login from './routes/Login';
 import ChatRoom from './routes/ChatRoom';
 
@@ -24,8 +24,11 @@ function LidaRouter() {
           <Route path="/demo">
             <Demo />
           </Route>
-          <Route path="/">
+          <Route path="/home">
             <Main />
+          </Route>
+          <Route path="*">
+            <Redirect to="/home" />
           </Route>
         </Switch>
       </Suspense>
