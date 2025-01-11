@@ -115,7 +115,7 @@ function Login() {
             </Discription>
             <MoreBtn>
               <p>
-                <Link to={'/'}>Learn More</Link>
+                <Link to={'/home'}>Learn More</Link>
               </p>
             </MoreBtn>
           </DiscriptiopWrapper>
@@ -135,7 +135,7 @@ function Login() {
             </Discription>
             <MoreBtn>
               <p>
-                <Link to={'/'}>Learn More</Link>
+                <Link to={'/home'}>Learn More</Link>
               </p>
             </MoreBtn>
           </RightSideTitleWrapper>

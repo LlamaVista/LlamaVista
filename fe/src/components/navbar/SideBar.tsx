@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
@@ -191,7 +191,7 @@ function SideBar() {
   const [isLogin, setIsLogin] = useState(false);
   const [isComponentDidMount, setIsComponentDidMount] = useState(false);
 
-  const { mutate: getChatMutate, data } = useMutation(getChatList, {
+  const { mutate: getChatMutate, isLoading } = useMutation(getChatList, {
     onError: (e) => {
       // console.log(e);
     },
@@ -330,7 +330,7 @@ function SideBar() {
                   {/* <HomeMenuImg src="http://localhost:3000/Images/home.svg" /> */}
                   <Link
                     ref={(element) => (linkRef.current[0] = element)}
-                    to={'/'}
+                    to={'/home'}
                   >
                     Home
                   </Link>

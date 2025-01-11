@@ -142,7 +142,7 @@ function Intro() {
             <StartBtnLink onClick={onStartBtnClick}>
               <span>Get Started</span>
             </StartBtnLink>
-            <GithubBtn href="https://github.com/seo-seoungjun/VISTA-FE">
+            <GithubBtn href="https://github.com/LlamaVista/LlamaVista/tree/FE">
               <span>Go Github</span>
             </GithubBtn>
           </StartBtnWapper>

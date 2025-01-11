@@ -10,7 +10,7 @@ export const useEmailMutate = () => {
 
   const emailLoginUserInfo = useEmailLoginTokenValid('/demo');
 
-  const { mutate } = useMutation(getEmailLoginToken, {
+  const { mutate, isLoading } = useMutation(getEmailLoginToken, {
     onSuccess: (tokenData) => {
       tokenData.domain = 'Standard';
 
@@ -38,5 +38,5 @@ export const useEmailMutate = () => {
     },
   });
 
-  return mutate;
+  return { mutate, isLoading };
 };
