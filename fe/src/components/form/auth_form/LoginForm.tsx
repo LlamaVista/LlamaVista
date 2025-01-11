@@ -8,6 +8,7 @@ import SignUpForm from './SignUpForm';
 import { ILogin } from '../../../interface/auth/interface.auth';
 import { useEmailMutate } from '../../../hooks/useEmailMutate';
 import { useGoogleMutate } from '../../../hooks/useGoogleMutate';
+import Loading from '../../loading/Loading';
 require('dotenv').config();
 
 const DNS = process.env.REACT_APP_DNS;
@@ -112,7 +113,7 @@ function LoginForm() {
     },
   });
 
-  const emailLoginMutate = useEmailMutate();
+  const { mutate: emailLoginMutate, isLoading } = useEmailMutate();
 
   const SubmitOnValid = (data: ILogin) => {
     emailLoginMutate(data);
@@ -146,48 +147,52 @@ function LoginForm() {
 
   return (
     <Container>
-      <Switch>
-        <Route exact path={'/login/signup'}>
-          <SignUpForm />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route exact path={'/login'}>
-          <Form
-            encType="multipart/form-data"
-            onSubmit={handleSubmit(SubmitOnValid)}
-          >
-            <h1>Login</h1>
-            <Input
-              {...register('username')}
-              required
-              type="email"
-              placeholder="Id"
-            />
-            <Input
-              {...register('password')}
-              required
-              type="password"
-              placeholder="password"
-            />
-            <LogInButton type="submit">login</LogInButton>
-          </Form>
-        </Route>
-      </Switch>
-      {loginMatch?.isExact && (
-        <SignUpToggleLink to={'/login/signup'}>
-          Sign Up With Email
-        </SignUpToggleLink>
-      )}
-      {signMatuch?.isExact && (
-        <SignUpToggleLink to={'/login'}>Log in</SignUpToggleLink>
-      )}
-      <SocialLoginBtnWrapper>
-        <SocialLoginBtn onClick={() => handleGoogleLogin()}>
-          <GoogleIcon src={`${DNS}:3000/Images/google.svg`} />
-          <p>sign in with google</p>
-        </SocialLoginBtn>
-        {/* <SocialLoginBtn
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <Switch>
+            <Route exact path={'/login/signup'}>
+              <SignUpForm />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route exact path={'/login'}>
+              <Form
+                encType="multipart/form-data"
+                onSubmit={handleSubmit(SubmitOnValid)}
+              >
+                <h1>Login</h1>
+                <Input
+                  {...register('username')}
+                  required
+                  type="email"
+                  placeholder="Id"
+                />
+                <Input
+                  {...register('password')}
+                  required
+                  type="password"
+                  placeholder="password"
+                />
+                <LogInButton type="submit">login</LogInButton>
+              </Form>
+            </Route>
+          </Switch>
+          {loginMatch?.isExact && (
+            <SignUpToggleLink to={'/login/signup'}>
+              Sign Up With Email
+            </SignUpToggleLink>
+          )}
+          {signMatuch?.isExact && (
+            <SignUpToggleLink to={'/login'}>Log in</SignUpToggleLink>
+          )}
+          <SocialLoginBtnWrapper>
+            <SocialLoginBtn onClick={() => handleGoogleLogin()}>
+              <GoogleIcon src={`${DNS}:3000/Images/google.svg`} />
+              <p>sign in with google</p>
+            </SocialLoginBtn>
+            {/* <SocialLoginBtn
           onMouseEnter={onGithubIconEnter}
           onMouseLeave={onGithubIconLeave}
           onClick={handleGithubLogin}
@@ -198,7 +203,9 @@ function LoginForm() {
           />
           <p>sign in with github</p>
         </SocialLoginBtn> */}
-      </SocialLoginBtnWrapper>
+          </SocialLoginBtnWrapper>
+        </>
+      )}
     </Container>
   );
 }
