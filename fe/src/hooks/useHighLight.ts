@@ -6,12 +6,11 @@ export const useHighLight = (
   initialColor: string,
   isMount?: boolean
 ) => {
-  const linkRef = useRef<HTMLAnchorElement[] | null[]>([]);
+  const linkRef = useRef<(HTMLAnchorElement | null)[]>([]);
   const { pathname: currentUrl } = useLocation();
+  let highLightElement: HTMLAnchorElement;
 
   useEffect(() => {
-    let highLightElement: HTMLAnchorElement;
-
     const handleMouseEnter = (event: MouseEvent) => {
       const element = event.target as HTMLAnchorElement;
       element.style.color = highLightColor;
@@ -24,38 +23,33 @@ export const useHighLight = (
       highLightElement.style.color = highLightColor;
     };
 
-    if (isMount || currentUrl == '/home') {
-      linkRef?.current.forEach((element) => {
-        element = element as HTMLAnchorElement;
-
-        console.log(element);
-
+    // 초기화: 링크가 로드되었을 때
+    linkRef.current.forEach((element, index) => {
+      if (element) {
         const fullUrl = element.href;
-        const linkElementPathName = fullUrl.substring(
-          fullUrl.lastIndexOf('3000') + 4
-        );
-
-        console.log(currentUrl, linkElementPathName);
+        const linkElementPathName = new URL(fullUrl).pathname;
 
         if (linkElementPathName === currentUrl) {
           highLightElement = element;
-          highLightElement.style.color = highLightColor;
+          element.style.color = highLightColor;
         } else {
-          element?.addEventListener('mouseenter', (e) => handleMouseEnter(e));
-          element?.addEventListener('mouseleave', (e) => handleMouseLeave(e));
+          element.style.color = initialColor;
+          element.addEventListener('mouseenter', handleMouseEnter);
+          element.addEventListener('mouseleave', handleMouseLeave);
+        }
+      }
+    });
+
+    // 클린업: 컴포넌트 언마운트 시 이벤트 리스너 제거
+    return () => {
+      linkRef.current.forEach((element) => {
+        if (element) {
+          element.removeEventListener('mouseenter', handleMouseEnter);
+          element.removeEventListener('mouseleave', handleMouseLeave);
         }
       });
-    }
-
-    return () => {
-      linkRef?.current.forEach((element) => {
-        element = element as HTMLAnchorElement;
-
-        element?.removeEventListener('mouseenter', handleMouseEnter);
-        element?.removeEventListener('mouseleave', handleMouseLeave);
-      });
     };
-  }, [isMount]);
+  }, [currentUrl, isMount]);
 
   return linkRef;
 };
