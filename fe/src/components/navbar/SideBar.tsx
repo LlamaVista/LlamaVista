@@ -1,12 +1,11 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
 import styled from 'styled-components';
 
 import { userInfo } from '../../atoms/auth/atom.auth';
 
-import { fileId } from '../../atoms/analytics/atom.analytics';
 import { useAuth } from '../../hooks/auth';
 import { useLogOut } from '../../hooks/useLogOut';
 import { useHighLight } from '../../hooks/useHighLight';
