@@ -190,3 +190,13 @@ export const getAssistantFileList = async (threadId: string) => {
 
   return res.data;
 };
+
+export const fetchImage = async (fileId: string) => {
+  const response = await fetch(
+    `${DNS}:${SPRING_PORT}/static/images/${fileId}.png`
+  );
+  if (!response.ok) {
+    throw new Error('Failed to fetch image');
+  }
+  return response.blob();
+};
