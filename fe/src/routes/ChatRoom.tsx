@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
-import { useMutation, useQuery } from 'react-query';
+import { useMutation, useQuery, useQueryClient } from 'react-query';
 import styled from 'styled-components';
 import SideBar from '../components/navbar/SideBar';
 import { useAuth } from '../hooks/auth';
@@ -102,6 +102,7 @@ const MessageContainer = styled.div`
 
 function ChatRoom() {
   const params = useParams<{ thread_id: string }>();
+  const THREAD_ID = params.thread_id;
 
   const [createStreamingLoading, setCreateStreamingLoading] = useState(false);
   const [streamingDone, setStreamingDone] = useState(false);
@@ -110,7 +111,7 @@ function ChatRoom() {
   );
 
   const [fileName, setFileName] = useState();
-  const [userMessage, setUserMessage] = useRecoilState(userMessages);
+  const [userMessage, setUserMessage] = useRecoilState(userMessages(THREAD_ID));
 
   const {
     register,
@@ -123,21 +124,40 @@ function ChatRoom() {
     },
   });
 
-  const THREAD_ID = params.thread_id;
   const auth = useAuth();
 
-  const { mutate: getChatContentMutate, isLoading: isChatContentLoading } =
-    useMutation(getChatContenet, {
-      onSuccess: (chatContent) => {
+  const { isLoading: isChatContentLoading } = useQuery(
+    ['chatContent', THREAD_ID],
+    () => getChatContenet(THREAD_ID),
+    {
+      staleTime: 1000 * 60, // 1분 동안 캐시된 데이터 사용
+      cacheTime: 1000 * 60 * 5, // 5분 동안 캐시 유지
+      refetchOnWindowFocus: false, // 포커스할 때 refetch 방지
+      enabled: !!THREAD_ID, // thread_id가 있을 때만 쿼리 실행
+      onSuccess: (data) => {
+        const chatContent = JSON.parse(JSON.stringify(data));
+
         chatContent.reverse();
         chatContent[0].text = null;
+
         setUserMessage(chatContent);
       },
-    });
+    }
+  );
+
+  // const { mutate: getChatContentMutate, isLoading: isChatContentLoading } =
+  //   useMutation(getChatContenet, {
+  //     onSuccess: (chatContent) => {
+  //       chatContent.reverse();
+  //       chatContent[0].text = null;
+  //       setUserMessage(chatContent);
+  //       queryClient.setQueryData(['chatContent', THREAD_ID], chatContent);
+  //     },
+  //   });
 
   useEffect(() => {
     auth();
-    getChatContentMutate(THREAD_ID);
+    // getChatContentMutate(THREAD_ID);
   }, [THREAD_ID]);
 
   const { mutate, isLoading: chatMutateLoading } = useMutation(sendChat, {
